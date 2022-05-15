@@ -1,0 +1,12 @@
+{
+	"name":"vuestic-ui",
+	"defs":["def.json","class-def.json","icons-def.json","natura-def.yaml"],
+	"uploadPath":"dist",
+	"entrypoint":"main.js",
+	"umdName":"VuesticUI",
+	"stylesheets":[
+		"vuestic-ui.css",
+		"https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,700&display=swap",
+		"https://fonts.googleapis.com/icon?family=Material+Icons"
+	]
+}

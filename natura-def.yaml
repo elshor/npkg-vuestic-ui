@@ -1,0 +1,27 @@
+components:
+  - name: VaAvatar
+    props:
+      - name: email
+        type: string
+      - name: icon
+        type: icon name
+    slots:
+    - name: default
+      type: VaCollapse
+  - name: VaAccordion
+    placeholders:
+    - tooltip: Insert collaps into accordion
+    init:
+      children:
+      - $type: VaCollapse
+        props:
+          header: first collapse header
+      - $type: VaCollapse
+        props:
+          header: second collapse header
+  - name: VaButton
+    props:
+    - name: icon
+      type: icon name
+    - name: iconRight
+      type: icon name

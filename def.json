@@ -1,0 +1,5568 @@
+{
+  "name": "vuestic-ui",
+  "description": "Vue 3 UI Framework",
+  "components": [
+    {
+      "name": "VaButtonDropdown",
+      "title": "ButtonDropdown",
+      "importIdentifier": "VaButtonDropdown",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Dropdown content slot."
+        },
+        {
+          "name": "label",
+          "title": "label",
+          "description": "Content for dropdown button."
+        }
+      ],
+      "props": [
+        {
+          "name": "size",
+          "title": "size",
+          "description": "Specify size for component. `\"small\"`, `\"medium\"`, `\"large\"` sizes are available.",
+          "type": [
+            "String"
+          ],
+          "default": "medium",
+          "required": false
+        },
+        {
+          "name": "disableDropdown",
+          "title": "disable dropdown",
+          "description": "Disables the dropdown menu.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "disableButton",
+          "title": "disable button",
+          "description": "Disables the button.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "round",
+          "title": "round",
+          "description": "Sets the square style for a button."
+        },
+        {
+          "name": "split",
+          "title": "split",
+          "description": "Divides the button into two parts. This is useful when you have main action (button) and a number of secondary actions (icon + dropdown).",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "splitTo",
+          "title": "split to",
+          "description": "Sets a vue navigation link in a split component.",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "splitHref",
+          "title": "split href",
+          "description": "Sets a native navigation link in a split component.",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "Applies a custom icon in the dropdown section.",
+          "type": [
+            "String"
+          ],
+          "default": "expand_more",
+          "required": false
+        },
+        {
+          "name": "leftIcon",
+          "title": "left icon",
+          "description": "Sets the icon position to the left",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hideIcon",
+          "title": "hide icon",
+          "description": "Hide icon (when `split = false`)",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "openedIcon",
+          "title": "opened icon",
+          "description": "Applies a custom icon in the dropdown section when the dropdown is opened.",
+          "type": [
+            "String"
+          ],
+          "default": "expand_less",
+          "required": false
+        },
+        {
+          "name": "position",
+          "title": "position",
+          "description": "Sets the position of the dropdown content.",
+          "type": [
+            "String"
+          ],
+          "default": "bottom",
+          "required": false
+        },
+        {
+          "name": "keepAnchorWidth",
+          "title": "keep anchor width",
+          "description": "Keeps anchor position the same.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "offset",
+          "title": "offset",
+          "description": "Sets the distance between dropdown and anchor.",
+          "type": [
+            "Number",
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "modelValue",
+          "title": "model value",
+          "description": "Sets a dropdown state.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "closeOnContentClick",
+          "title": "close on content click",
+          "description": "Sets dropdown content on click behavior.",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "click",
+          "title": "click",
+          "description": "Emitted when user clicks on button.",
+          "type": "`() => Event`"
+        },
+        {
+          "name": "mainButtonClick",
+          "title": "mainButtonClick",
+          "description": "Emitted when user clicks on main button in split component.",
+          "type": "`() => Event`"
+        }
+      ]
+    },
+    {
+      "name": "VaDropdown",
+      "title": "Dropdown",
+      "importIdentifier": "VaDropdown"
+    },
+    {
+      "name": "VaAccordion",
+      "title": "Accordion",
+      "importIdentifier": "VaAccordion",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Contains collapses"
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The array of currently opened collapses"
+        },
+        {
+          "name": "multiply",
+          "title": "multiply",
+          "description": "Allows to expand multiply components",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "inset",
+          "title": "inset",
+          "description": "Collapse becomes smaller when activated",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "popout",
+          "title": "popout",
+          "description": "Collapse becomes bigger when activated",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "input",
+          "title": "input",
+          "description": "Emits when any of collapses is clicked",
+          "type": "(value: array) => void"
+        }
+      ]
+    },
+    {
+      "name": "VaDateInput",
+      "title": "DateInput",
+      "importIdentifier": "VaDateInput",
+      "props": [
+        {
+          "name": "modelValue",
+          "title": "model value",
+          "description": "Date, date array or date period",
+          "type": [
+            "Date",
+            "Array",
+            "Object"
+          ],
+          "required": false
+        },
+        {
+          "name": "weekDays",
+          "title": "week days",
+          "description": "Adds days to the table"
+        },
+        {
+          "name": "placeholder",
+          "title": "placeholder",
+          "description": "Sets input placeholder",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "config",
+          "title": "config",
+          "description": "Object with settings for date picker"
+        },
+        {
+          "name": "monthNames",
+          "title": "month names",
+          "description": "Array of 12 month names",
+          "type": [
+            "Array"
+          ],
+          "default": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "required": false
+        },
+        {
+          "name": "weekdayNames",
+          "title": "weekday names",
+          "description": "Array of 7 weekday names",
+          "type": [
+            "Array"
+          ],
+          "default": [
+            "SU",
+            "MO",
+            "TU",
+            "WE",
+            "TH",
+            "FR",
+            "SA"
+          ],
+          "required": false
+        },
+        {
+          "name": "firstWeekday",
+          "title": "first weekday",
+          "description": "Name of first weekday. Can be `Monday` or `Sunday`",
+          "type": [
+            "String"
+          ],
+          "default": "Sunday",
+          "required": false
+        },
+        {
+          "name": "hideWeekDays",
+          "title": "hide week days",
+          "description": "Hide weekday names on top of day picker",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "view",
+          "title": "view",
+          "description": "This prop specify which year and month will be shown to user. Also, you can specify type and show year, month or day picker",
+          "type": [
+            "Object"
+          ],
+          "required": false
+        },
+        {
+          "name": "type",
+          "title": "type",
+          "description": "This prop will specify which value user should choose",
+          "type": [
+            "String"
+          ],
+          "default": "day",
+          "required": false
+        },
+        {
+          "name": "showOtherMonths",
+          "title": "show other months",
+          "description": "If `true`, other month days will be shown in day picker",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "highlightWeekend",
+          "title": "highlight weekend",
+          "description": "If `true` weekend will be colored",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "highlightToday",
+          "title": "highlight today",
+          "description": "If `true` today date will be colored",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "allowedDays",
+          "title": "allowed days",
+          "description": "Function that accepts date and return `false` if day is not allowed",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "allowedMonths",
+          "title": "allowed months",
+          "description": "Function that accepts date and return `false` if month is not allowed",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "allowedYears",
+          "title": "allowed years",
+          "description": "Function that accepts date and return `false` if year is not allowed",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "weekends",
+          "title": "weekends",
+          "description": "Function that accepts date and return `true` if date is weekend",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "startYear",
+          "title": "start year",
+          "description": "First year that user can choose. By default is 1970",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "endYear",
+          "title": "end year",
+          "description": "Last year that user can choose. By default is current year plus 50 years",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "weekendsColor",
+          "title": "weekends color",
+          "description": "Color of the weekend cells (theme string or HEX string).",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "mode",
+          "title": "mode",
+          "description": "Specify if picker value is single date, multiple dates or date range.",
+          "type": [
+            "String"
+          ],
+          "default": "auto",
+          "required": false
+        },
+        {
+          "name": "clearable",
+          "title": "clearable",
+          "description": "Adds a button to reset the input field value",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "clearValue",
+          "title": "clear value",
+          "description": "Default input field value",
+          "type": [
+            "Date"
+          ],
+          "required": false
+        },
+        {
+          "name": "formatDate",
+          "title": "format date",
+          "description": "Function that accepts picker value and transforms it to the string",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "format",
+          "title": "format",
+          "description": "Function that accepts picker value and should transform it to text for input",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "isOpen",
+          "title": "is open",
+          "description": "Value for dropdown. If `true`, then dropdown is shown",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "resetOnClose",
+          "title": "reset on close",
+          "description": "If true, range value will be reset to previous valid value",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "bordered",
+          "title": "bordered",
+          "description": "Applies underscore",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "label",
+          "title": "label",
+          "description": "Sets input label",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "mask",
+          "title": "mask",
+          "description": "Sets input mask if using as string or options for mask"
+        },
+        {
+          "name": "color",
+          "title": "color",
+          "description": "Sets input color",
+          "type": [
+            "String"
+          ],
+          "default": "primary",
+          "required": false
+        },
+        {
+          "name": "removable",
+          "title": "removable",
+          "description": "Adds an button that clears the value"
+        },
+        {
+          "name": "tabindex",
+          "title": "tabindex",
+          "description": "Sets input tabindex",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "returnRaw",
+          "title": "return raw",
+          "description": "Sets possibility to return raw value"
+        },
+        {
+          "name": "autosize",
+          "title": "autosize",
+          "description": "Sets textarea possibility to grow up automatically"
+        },
+        {
+          "name": "minRows",
+          "title": "min rows",
+          "description": "Minimal count of lines"
+        },
+        {
+          "name": "maxRows",
+          "title": "max rows",
+          "description": "Maximum count of lines"
+        },
+        {
+          "name": "rules",
+          "title": "rules",
+          "description": "Accepts an array of functions that take an input value as an argument and return either true / false or a string with an error message",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "title": "disabled",
+          "description": "Disable the input",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "readonly",
+          "title": "readonly",
+          "description": "Puts input in readonly state",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "success",
+          "title": "success",
+          "description": "Sets input state to success",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "messages",
+          "title": "messages",
+          "description": "Displays a list of messages or message if using a string",
+          "type": [
+            "Array",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "error",
+          "title": "error",
+          "description": "Sets input state to error",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "errorMessages",
+          "title": "error messages",
+          "description": "Displays a list of error messages or message if using a string",
+          "type": [
+            "Array",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "errorCount",
+          "title": "error count",
+          "description": "Number of error messages displayed",
+          "type": [
+            "String",
+            "Number"
+          ],
+          "default": 1,
+          "required": false
+        },
+        {
+          "name": "manualInput",
+          "title": "manual input",
+          "description": "Allows user to manually input date in VaInput",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "parse",
+          "title": "parse",
+          "description": "Function that transforms input field text to date, date array or date period",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "parseDate",
+          "title": "parse date",
+          "description": "Function that transforms input field text to date",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "parseValue",
+          "title": "parse value",
+          "description": "Function that transforms string value to date, date array or date period",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "focus",
+          "title": "focus"
+        },
+        {
+          "name": "blur",
+          "title": "blur"
+        }
+      ],
+      "events": [
+        {
+          "name": "clear",
+          "title": "clear",
+          "description": "Emitted if select value has been cleared"
+        },
+        {
+          "name": "updateView",
+          "title": "updateView",
+          "description": "The event is triggered when the component needs to change the view"
+        },
+        {
+          "name": "updateMonth",
+          "title": "updateMonth",
+          "description": "The event is triggered when the component needs to change the month"
+        },
+        {
+          "name": "updateYear",
+          "title": "updateYear",
+          "description": "The event is triggered when the component needs to change the year"
+        },
+        {
+          "name": "updateIsOpen",
+          "title": "updateIsOpen",
+          "description": "The event is triggered when the component needs to toggle the 'is-open'"
+        },
+        {
+          "name": "updateText",
+          "title": "updateText",
+          "description": "The event is triggered when the component needs to change the input text"
+        },
+        {
+          "name": "hoverDay",
+          "title": "hoverDay",
+          "description": "The event is triggered when the mouse hover the day cell"
+        },
+        {
+          "name": "hoverMonth",
+          "title": "hoverMonth",
+          "description": "The event is triggered when the mouse hover the month cell"
+        },
+        {
+          "name": "hoverYear",
+          "title": "hoverYear",
+          "description": "The event is triggered when the mouse hover the year cell"
+        },
+        {
+          "name": "clickDay",
+          "title": "clickDay",
+          "description": "The event is triggered when clicked the day cell"
+        },
+        {
+          "name": "clickMonth",
+          "title": "clickMonth",
+          "description": "The event is triggered when clicked the month cell"
+        },
+        {
+          "name": "clickYear",
+          "title": "clickYear",
+          "description": "The event is triggered when clicked the year cell"
+        }
+      ]
+    },
+    {
+      "name": "VaAffix",
+      "title": "Affix",
+      "importIdentifier": "VaAffix",
+      "props": [
+        {
+          "name": "offsetTop",
+          "title": "offset top",
+          "description": "Distance from the top of target element to the top of affixed element.",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "offsetBottom",
+          "title": "offset bottom",
+          "description": "Distance from the bottom of target element to the bottom of affixed element.",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "target",
+          "title": "target",
+          "description": "The element relative to which the component is fixed.",
+          "type": [
+            "Object",
+            "Function"
+          ],
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "change",
+          "title": "change",
+          "description": "Emits affixed state on its' change.",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "VaAlert",
+      "title": "Alert",
+      "importIdentifier": "VaAlert",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Content of alert body"
+        },
+        {
+          "name": "title",
+          "title": "title",
+          "description": "Alert title area content"
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "Alert icon area content"
+        },
+        {
+          "name": "close",
+          "title": "close",
+          "description": "Alert close area content"
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The current visibility state of the alert"
+        },
+        {
+          "name": "title",
+          "title": "title",
+          "description": "The text content placed in the title",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "description",
+          "title": "description",
+          "description": "The text content of the alert",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "Show icon in front of alert content",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "closeIcon",
+          "title": "close icon",
+          "description": "Replace the default close icon with a custom one"
+        },
+        {
+          "name": "closeText",
+          "title": "close text",
+          "description": "Use text instead of the close icon",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "closeable",
+          "title": "closeable",
+          "description": "Add a close alert area",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "center",
+          "title": "center",
+          "description": "Center the title and description of the alert",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "borderColor",
+          "title": "border color",
+          "description": "Border color of the alert",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "border",
+          "title": "border",
+          "description": "Stripe border for alert. `top`, `right`, `bottom`, `left` sizes are available",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "dense",
+          "title": "dense",
+          "description": "Reduces alert paddings",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaDatePicker",
+      "title": "DatePicker",
+      "importIdentifier": "VaDatePicker",
+      "slots": [
+        {
+          "name": "buttonPrev",
+          "title": "button prev",
+          "description": "Button show previous month or year."
+        },
+        {
+          "name": "buttonNext",
+          "title": "button next",
+          "description": "Button show next month or year."
+        },
+        {
+          "name": "header",
+          "title": "header",
+          "description": "This slot is showing year and month between header buttons."
+        },
+        {
+          "name": "year",
+          "title": "year",
+          "description": "Used to change how year will be displayed in header and picker cell."
+        },
+        {
+          "name": "month",
+          "title": "month",
+          "description": "Used to change how month will be displayed in header and picker cell."
+        },
+        {
+          "name": "weekday",
+          "title": "weekday",
+          "description": "Used to change how weekday will be displayed in picker cell."
+        },
+        {
+          "name": "day",
+          "title": "day",
+          "description": "Used to change how day will be displayed in picker cell."
+        }
+      ],
+      "props": [
+        {
+          "name": "modelValue",
+          "title": "model value",
+          "description": "Date, date array or date period",
+          "type": [
+            "Date",
+            "Array",
+            "Object"
+          ],
+          "required": false
+        },
+        {
+          "name": "monthNames",
+          "title": "month names",
+          "description": "Array of 12 month names",
+          "type": [
+            "Array"
+          ],
+          "default": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "required": false
+        },
+        {
+          "name": "weekdayNames",
+          "title": "weekday names",
+          "description": "Array of 7 weekday names",
+          "type": [
+            "Array"
+          ],
+          "default": [
+            "SU",
+            "MO",
+            "TU",
+            "WE",
+            "TH",
+            "FR",
+            "SA"
+          ],
+          "required": false
+        },
+        {
+          "name": "firstWeekday",
+          "title": "first weekday",
+          "description": "Name of first weekday. Can be `Monday` or `Sunday`",
+          "type": [
+            "String"
+          ],
+          "default": "Sunday",
+          "required": false
+        },
+        {
+          "name": "hideWeekDays",
+          "title": "hide week days",
+          "description": "Hide weekday names on top of day picker",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "view",
+          "title": "view",
+          "description": "This prop specify which year and month will be shown to user. Also, you can specify type and show year, month or day picker",
+          "type": [
+            "Object"
+          ],
+          "required": false
+        },
+        {
+          "name": "type",
+          "title": "type",
+          "description": "This prop will specify which value user should choose",
+          "type": [
+            "String"
+          ],
+          "default": "day",
+          "required": false
+        },
+        {
+          "name": "showOtherMonths",
+          "title": "show other months",
+          "description": "If `true`, other month days will be shown in day picker",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "highlightWeekend",
+          "title": "highlight weekend",
+          "description": "If `true` weekend will be colored",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "highlightToday",
+          "title": "highlight today",
+          "description": "If `true` today date will be colored",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "allowedDays",
+          "title": "allowed days",
+          "description": "Function that accepts date and return `false` if day is not allowed",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "allowedMonths",
+          "title": "allowed months",
+          "description": "Function that accepts date and return `false` if month is not allowed",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "allowedYears",
+          "title": "allowed years",
+          "description": "Function that accepts date and return `false` if year is not allowed",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "weekends",
+          "title": "weekends",
+          "description": "Function that accepts date and return `true` if date is weekend",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "startYear",
+          "title": "start year",
+          "description": "First year that user can choose. By default is 1970",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "endYear",
+          "title": "end year",
+          "description": "Last year that user can choose. By default is current year plus 50 years",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "weekendsColor",
+          "title": "weekends color",
+          "description": "Color of the weekend cells (theme string or HEX string).",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "mode",
+          "title": "mode",
+          "description": "Specify if picker value is single date, multiple dates or date range.",
+          "type": [
+            "String"
+          ],
+          "default": "auto",
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "updateView",
+          "title": "updateView",
+          "description": "Emit when DatePicker \"view type\" is changed. DatePicker view types are `\"day\"`, `\"month\"`, `\"year\"`.",
+          "type": "`() => Object`"
+        },
+        {
+          "name": "hoverYear",
+          "title": "hoverYear",
+          "description": "The event is triggered when the mouse hover the year cell.",
+          "type": "`() => Date | undefined`"
+        },
+        {
+          "name": "clickYear",
+          "title": "clickYear",
+          "description": "The event is triggered when clicked the year cell.",
+          "type": "`() => Date`"
+        },
+        {
+          "name": "hoverDay",
+          "title": "hoverDay",
+          "description": "The event is triggered when the mouse hover the day cell.",
+          "type": "`() => Date | undefined`"
+        },
+        {
+          "name": "clickDay",
+          "title": "clickDay",
+          "description": "The event is triggered when clicked the day cell.",
+          "type": "`() => Date`"
+        },
+        {
+          "name": "hoverMonth",
+          "title": "hoverMonth",
+          "description": "The event is triggered when the mouse hover the month cell.",
+          "type": "`() => Date | undefined`"
+        },
+        {
+          "name": "clickMonth",
+          "title": "clickMonth",
+          "description": "The event is triggered when clicked the month cell.",
+          "type": "`() => Date`"
+        }
+      ]
+    },
+    {
+      "name": "VaDataTable",
+      "title": "DataTable",
+      "importIdentifier": "VaDataTable",
+      "slots": [
+        {
+          "name": "colgroup",
+          "title": "colgroup",
+          "description": "The contents of this slot is wrapped (if provided) inside the `<colgroup>` tag, allowing to specify certain column options. Bound to columns (not the prop, but their internal representation)"
+        },
+        {
+          "name": "headerPrepend",
+          "title": "header prepend",
+          "description": "Prepends custom rows in table header (`<thead>`). Isn't bound to anything"
+        },
+        {
+          "name": "header",
+          "title": "header",
+          "description": "Targets all the table headings. Is bound to columns (to their internal representation)"
+        },
+        {
+          "name": "headerKey",
+          "title": "header key",
+          "description": "Targets a specific table header by the column's `key`. Is bound to column"
+        },
+        {
+          "name": "headerAppend",
+          "title": "header append",
+          "description": "Appends custom rows inside table header (`<thead>`)"
+        },
+        {
+          "name": "bodyPrepend",
+          "title": "body prepend",
+          "description": "Prepends `<tbody>` with custom rows"
+        },
+        {
+          "name": "cell",
+          "title": "cell",
+          "description": "Targets all the cells. Is bound to the current cell (to it internal representation)"
+        },
+        {
+          "name": "cellKey",
+          "title": "cell key",
+          "description": "Allows to target only cells of a specified by the given `key` column. Is bound to the current cell"
+        },
+        {
+          "name": "bodyAppend",
+          "title": "body append",
+          "description": "Appends rows to the table's `<tbody>`"
+        },
+        {
+          "name": "footerPrepend",
+          "title": "footer prepend",
+          "description": "Prepends rows to the table's `<tfoot>`"
+        },
+        {
+          "name": "footer",
+          "title": "footer",
+          "description": "Targets all the headers inside `<tfoot>`. Works if there's a `footer-clone` prop set to `true`"
+        },
+        {
+          "name": "footerKey",
+          "title": "footer key",
+          "description": "A specific header in `<tfoot>`. Is bound to the column (to it internal representation) with the given `key`. Works if there's a `footer-clone` prop set to `true`"
+        },
+        {
+          "name": "footerAppend",
+          "title": "footer append",
+          "description": "Appends rows to the `<tfoot>`"
+        }
+      ],
+      "props": [
+        {
+          "name": "columns",
+          "title": "columns",
+          "description": "The property `columns` must be an array, that configures the columns of the table. In this case:\n\n `ITableColumn` &#123; `key: string;` `label?: string;` `headerTitle?: string;` `sortable?: boolean;` `sortingFn?: (a: any, b: any) => number;` `alignHead?: TAlignOptions;` `verticalAlignHead?: TVerticalAlignOptions;` `align?: TAlignOptions;` `verticalAlign?: TVerticalAlignOptions;` `width?: string`&#124;`number;` `classes?: TClassesOptions;` `headerClasses?: TClassesOptions;` `style?: TStyleOptions;` `headerStyle?: TStyleOptions;` &#125;;\n\n `TAlignOptions: 'left'`&#124;`'center'`&#124;`'right'`;\n\n `TVerticalAlignOptions: 'top'`&#124;`'middle'`&#124;`'bottom'`;\n\n `TClassesOptions: string`&#124;`string[]`&#124;`(() => string`&#124;`string[])`;\n\n `TStyleOptions: Record<string, any>`&#124;`(() => Record<string, any>)`",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "items",
+          "title": "items",
+          "description": "Array of objects with table data (`ITableItem: Record<string, any>`). The `va-data-table` automatically calculates the amount and the titles of columns (if not specified otherwise with the `columns` prop) based on these object's keys. When calculating the columns' names based on the item's objects' keys `va-data-table` uses [Lodash's startCase](https://lodash.com/docs/4.17.15#startCase)[[target=_blank]] internally. Faulty values are replaced with an empty string",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "filter",
+          "title": "filter",
+          "description": "If a `filter` is provided, only rows in which at least one cell contains the specified value will be displayed. To disable filtering at runtime (clear `filter`), specify an empty string",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "filterMethod",
+          "title": "filter method",
+          "description": "A custom filtering function. The function takes the initial value of the currently checked cell (the `source` is a formal parameter) and should return a `boolean` value, indicating whether to include the row containing this cell or not",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "sortBy",
+          "title": "sort by",
+          "description": "Sets the column to sort by. Works through the `v-model`",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "sortingOrder",
+          "title": "sorting order",
+          "description": "Sets the sorting order. Works through the `v-model`",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "selectable",
+          "title": "selectable",
+          "description": "Sets whether the `va-data-table` should have selectable rows or not",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "clickable",
+          "title": "clickable",
+          "description": "Sets whether the `va-data-table` should have clickable (the click events will be emitted) rows or not",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "selectMode",
+          "title": "select mode",
+          "description": "Sets the select mode. `'single'` selection allows for only a single row to be selected at a time, while `'multiple'` mode allows to select multiple rows by clicking on checkboxes or using the **ctrl**/**shift** keys when clicking rows",
+          "type": [
+            "String"
+          ],
+          "default": "multiple",
+          "required": false
+        },
+        {
+          "name": "selectedColor",
+          "title": "selected color",
+          "description": "Sets the highlighting color of the selected row",
+          "type": [
+            "String"
+          ],
+          "default": "primary",
+          "required": false
+        },
+        {
+          "name": "perPage",
+          "title": "per page",
+          "description": "Sets the maximum number of rows displayed in the table's `<tbody>`",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "currentPage",
+          "title": "current page",
+          "description": "Sets the number of the current table page",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "loading",
+          "title": "loading",
+          "description": "Sets the loading state for the table (by displaying the spinning loading-indicator)",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "loadingColor",
+          "title": "loading color",
+          "description": "Sets the color of the spinning loading-indicator",
+          "type": [
+            "String"
+          ],
+          "default": "primary",
+          "required": false
+        },
+        {
+          "name": "noDataHtml",
+          "title": "no data html",
+          "description": "Sets html-content for cases where there are no items passed in the `items` option at all",
+          "type": [
+            "String"
+          ],
+          "default": "No items",
+          "required": false
+        },
+        {
+          "name": "noDataFilteredHtml",
+          "title": "no data filtered html",
+          "description": "Sets html-content for cases where there are no items found when filtering the table using the `filter` prop",
+          "type": [
+            "String"
+          ],
+          "default": "No items match the provided filtering condition",
+          "required": false
+        },
+        {
+          "name": "hideDefaultHeader",
+          "title": "hide default header",
+          "description": "Sets whether to show the default headers for columns",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "footerClone",
+          "title": "footer clone",
+          "description": "Sets whether to clone the `<thead>` columns into the `<tfoot>`. Has no effect if the default `<thead>` is hidden with the `hide-default-header` prop",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "allowFooterSorting",
+          "title": "allow footer sorting",
+          "description": "Allows clicks on `<tfoot>` column headers to sort (and to display the sorting status) the rows",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "striped",
+          "title": "striped",
+          "description": "Sets the striped style to the `<tbody>` rows (highlights each 2nd row)",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hoverable",
+          "title": "hoverable",
+          "description": "Allows the hover state on table rows within a `<tbody>`. The highlighting color of the hover state takes from `selected-color` prop",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "animated",
+          "title": "animated",
+          "description": "Sets css `transition` to table rows",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "stickyHeader",
+          "title": "sticky header",
+          "description": "Enables sticky header (sticky header is achieved through CSS with `position: sticky` for `thead`)",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "height",
+          "title": "height",
+          "description": "Sets the height to the table and enables scrolling",
+          "type": [
+            "String",
+            "Number"
+          ],
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "updateSortBy",
+          "title": "updateSortBy",
+          "description": "Emits when `sort-by` changed"
+        },
+        {
+          "name": "updateSortingOrder",
+          "title": "updateSortingOrder",
+          "description": "Emits when `sorting-order` changed"
+        },
+        {
+          "name": "filtered",
+          "title": "filtered",
+          "description": "`va-data-table` emits the `filtered` event each time filtering is applied (and when the filter is cleared), with the following param: `FilteredEmit` = \n &#123;\n &nbsp; `items: ITableItem[]`,\n &nbsp; `itemsIndexes: number[]`\n &#125;",
+          "type": "`() => FilteredEmit`"
+        },
+        {
+          "name": "sorted",
+          "title": "sorted",
+          "description": "Each time the table's sorting changes, the `sorted` event is thrown, with the following param: `SortedEmit` = \n &#123;\n &nbsp; `sortBy: string`,\n &nbsp; `sortingOrder: TSortingOrder`,\n &nbsp; `items: ITableItem[]`,\n &nbsp; `itemsIndexes: number[]`\n &#125;",
+          "type": "`() => SortedEmit`"
+        },
+        {
+          "name": "rowClick",
+          "title": "rowClick",
+          "description": "When row clicked the event is thrown with the following param: `RowClickEmit` = \n &#123;\n &nbsp; `event: Event`,\n &nbsp; `item: ITableItem`,\n &nbsp; `itemIndex: number`\n &#125;"
+        },
+        {
+          "name": "rowDblclick",
+          "title": "rowDblclick",
+          "description": "Double-clicking a row raises an event with the `RowClickEmit` param"
+        },
+        {
+          "name": "rowContextmenu",
+          "title": "rowContextmenu",
+          "description": "When the context menu is clicked on a row, an event is raised with the `RowClickEmit` param"
+        },
+        {
+          "name": "selectionChange",
+          "title": "selectionChange",
+          "description": "The `selectionChange` event is thrown each time the selection changes. It provides the following object: `SelectionChangeEmit` = \n&#123;\n &nbsp; `currentSelectedItems: ITableItem[]`,\n &nbsp; `previousSelectedItems: ITableItem[]`\n &#125;",
+          "type": "`() => SelectionChangeEmit`"
+        }
+      ]
+    },
+    {
+      "name": "VaContent",
+      "title": "Content",
+      "importIdentifier": "VaContent"
+    },
+    {
+      "name": "VaAppBar",
+      "title": "AppBar",
+      "importIdentifier": "VaAppBar",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Slot for app-bar content"
+        }
+      ],
+      "props": [
+        {
+          "name": "gradient",
+          "title": "gradient",
+          "description": "Applies gradient style to background",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "bottom",
+          "title": "bottom",
+          "description": "Sets the component position to the bottom",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hideOnScroll",
+          "title": "hide on scroll",
+          "description": "Hides component when scrolling target",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "shadowOnScroll",
+          "title": "shadow on scroll",
+          "description": "Applies box-shadow to the component when scrolling target",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "shadowColor",
+          "title": "shadow color",
+          "description": "Sets color to the box-shadow",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "target",
+          "title": "target",
+          "description": "Target for scrolling",
+          "type": [
+            "Object",
+            "String"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaAvatar",
+      "title": "Avatar",
+      "importIdentifier": "VaAvatar",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Use this slot to replace default content to be displayed inside the component"
+        }
+      ],
+      "props": [
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "The icon to be displayed inside a container",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "src",
+          "title": "src",
+          "description": "URL to the image (will be placed inside `src` attribute of image tag)",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "fontSize",
+          "title": "font size",
+          "description": "The font-size of text inside avatar",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "email",
+          "title": "email",
+          "description": "Будет отображать `gravatar` для предоставленного email"
+        }
+      ]
+    },
+    {
+      "name": "VaBacktop",
+      "title": "Backtop",
+      "importIdentifier": "VaBacktop",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Slot for backtop content"
+        }
+      ],
+      "props": [
+        {
+          "name": "target",
+          "title": "target",
+          "description": "Applies the selector to which the backtop is bound",
+          "type": [
+            "Object",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "visibilityHeight",
+          "title": "visibility height",
+          "description": "The minimum height after which the backtop is displayed",
+          "type": [
+            "Number"
+          ],
+          "default": 300,
+          "required": false
+        },
+        {
+          "name": "speed",
+          "title": "speed",
+          "description": "Sets the scrolling speed",
+          "type": [
+            "Number"
+          ],
+          "default": 50,
+          "required": false
+        },
+        {
+          "name": "horizontalPosition",
+          "title": "horizontal position",
+          "description": "Sets the horizontal position of the component",
+          "type": [
+            "String"
+          ],
+          "default": "right",
+          "required": false
+        },
+        {
+          "name": "verticalPosition",
+          "title": "vertical position",
+          "description": "Sets the vertical position of the component",
+          "type": [
+            "String"
+          ],
+          "default": "bottom",
+          "required": false
+        },
+        {
+          "name": "horizontalOffset",
+          "title": "horizontal offset",
+          "description": "Sets the horizontal offset of the component from the border of the monitor",
+          "type": [
+            "String"
+          ],
+          "default": "1rem",
+          "required": false
+        },
+        {
+          "name": "verticalOffset",
+          "title": "vertical offset",
+          "description": "Sets the vertical offset of the component from the border of the monitor",
+          "type": [
+            "String"
+          ],
+          "default": "1rem",
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "click",
+          "title": "click",
+          "description": "Emitted when user clicked on backtop",
+          "type": "Event"
+        }
+      ]
+    },
+    {
+      "name": "VaBadge",
+      "title": "Badge",
+      "importIdentifier": "VaBadge",
+      "props": [
+        {
+          "name": "text",
+          "title": "text",
+          "description": "Badge text",
+          "type": [
+            "String",
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "overlap",
+          "title": "overlap",
+          "description": "Allows badge to overlap with element.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "transparent",
+          "title": "transparent",
+          "description": "Makes badge semi-transparent.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "multiLine",
+          "title": "multi line",
+          "description": "Badge text will wrap to next line.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "visibleEmpty",
+          "title": "visible empty",
+          "description": "Badge will be shown even when there is no text.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "dot",
+          "title": "dot",
+          "description": "Shows dot instead of full badge. Useful to notify user without grabbing too much attention.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "bottom",
+          "title": "bottom",
+          "description": "Position badge to the bottom.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "left",
+          "title": "left",
+          "description": "Position badge to the left",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaBreadcrumbs",
+      "title": "Breadcrumbs",
+      "importIdentifier": "VaBreadcrumbs",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "One or more `va-breadcrumbs-item` elements."
+        },
+        {
+          "name": "separator",
+          "title": "separator",
+          "description": "Separator element. Can be string or vue component."
+        }
+      ],
+      "props": [
+        {
+          "name": "activeColor",
+          "title": "active color",
+          "description": "Color of active links (theme string or HEX string).",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "separator",
+          "title": "separator",
+          "description": "Element to separate breadcrumbs items.",
+          "type": [
+            "String"
+          ],
+          "default": "/",
+          "required": false
+        },
+        {
+          "name": "separatorColor",
+          "title": "separator color",
+          "description": "Color of the separator icon (theme string or HEX string).",
+          "type": [
+            "String"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaBreadcrumbsItem",
+      "title": "BreadcrumbsItem",
+      "importIdentifier": "VaBreadcrumbsItem",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Component content."
+        }
+      ],
+      "props": [
+        {
+          "name": "label",
+          "title": "label",
+          "description": "Component content (string).",
+          "type": [
+            "String"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaButton",
+      "title": "Button",
+      "importIdentifier": "VaButton",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Slot for button content"
+        }
+      ],
+      "props": [
+        {
+          "name": "outline",
+          "title": "outline",
+          "description": "Applies outline styling",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "flat",
+          "title": "flat",
+          "description": "Applies `flat` styling",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "The icon to be displayed to the left of a title",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "iconRight",
+          "title": "icon right",
+          "description": "The icon to be displayed to the right of a title",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "type",
+          "title": "type",
+          "description": "Will be used as value for html `type` attribute",
+          "type": [
+            "String"
+          ],
+          "default": "button",
+          "required": false
+        },
+        {
+          "name": "block",
+          "title": "block",
+          "description": "Applies block styling (will take 100% of container width)",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "rounded",
+          "title": "rounded",
+          "description": "Adds rounded corners",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "round",
+          "title": "round",
+          "description": "Makes the button round",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "spaceBetweenItems",
+          "title": "space between items",
+          "description": "Sets margin between multiple buttons",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "gradient",
+          "title": "gradient",
+          "description": "Makes the button color a gradient",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "href",
+          "title": "href",
+          "description": "Will be used as value for html `href` attribute. (If used, `<button />` will be replaced with `<a>` tag)",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "target",
+          "title": "target",
+          "description": "Will be used as value for html `target` attribute (If used, `<button />` will be replaced with `<a>` tag)",
+          "type": [
+            "String"
+          ],
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "focus",
+          "title": "focus",
+          "description": "Sets focus on button",
+          "type": "`() => void`"
+        },
+        {
+          "name": "blur",
+          "title": "blur",
+          "description": "Removes focus from button",
+          "type": "`() => void`"
+        }
+      ],
+      "events": [
+        {
+          "name": "click",
+          "title": "click",
+          "description": "Emitted when user clicks on button",
+          "type": "`() => Event`"
+        }
+      ]
+    },
+    {
+      "name": "VaButtonGroup",
+      "title": "ButtonGroup",
+      "importIdentifier": "VaButtonGroup",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Slot for buttons"
+        }
+      ]
+    },
+    {
+      "name": "VaButtonToggle",
+      "title": "ButtonToggle",
+      "importIdentifier": "VaButtonToggle",
+      "props": [
+        {
+          "name": "options",
+          "title": "options",
+          "description": "The array of objects with `label` and `value` properties",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Current toggle state"
+        },
+        {
+          "name": "size",
+          "title": "size",
+          "description": "Specify size for component. \"small\", \"medium\", \"large\" sizes are available",
+          "type": [
+            "String"
+          ],
+          "default": "medium",
+          "required": false
+        },
+        {
+          "name": "toggleColor",
+          "title": "toggle color",
+          "description": "Color of the toggle button",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "activeButtonTextColor",
+          "title": "active button text color",
+          "description": "The color of the button text with the selected value",
+          "type": [
+            "String"
+          ],
+          "default": "white",
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "input",
+          "title": "input",
+          "description": "Emits when toggling to the different button",
+          "type": "(value: any) => void"
+        }
+      ]
+    },
+    {
+      "name": "VaCard",
+      "title": "Card",
+      "importIdentifier": "VaCard",
+      "props": [
+        {
+          "name": "stripe",
+          "title": "stripe",
+          "description": "Displays a stripe above a card title.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "stripeColor",
+          "title": "stripe color",
+          "description": "Customize stripe color (theme string or *HEX* string).",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "gradient",
+          "title": "gradient",
+          "description": "Adds color gradient to `va-card` body.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "bordered",
+          "title": "bordered",
+          "description": "Toggles borders of a card component.",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "outlined",
+          "title": "outlined",
+          "description": "Toggles shadow of `va-card`",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "dark",
+          "title": "dark",
+          "description": "Applies dark color and background to card",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaCardActions",
+      "title": "CardActions",
+      "importIdentifier": "VaCardActions"
+    },
+    {
+      "name": "VaCardContent",
+      "title": "CardContent",
+      "importIdentifier": "VaCardContent"
+    },
+    {
+      "name": "VaCardTitle",
+      "title": "CardTitle",
+      "importIdentifier": "VaCardTitle"
+    },
+    {
+      "name": "VaCheckbox",
+      "title": "Checkbox",
+      "importIdentifier": "VaCheckbox",
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The value of the checkbox"
+        },
+        {
+          "name": "checkedIcon",
+          "title": "checked icon",
+          "description": "Overrides the `checked` icon",
+          "type": [
+            "String"
+          ],
+          "default": "check",
+          "required": false
+        },
+        {
+          "name": "indeterminateIcon",
+          "title": "indeterminate icon",
+          "description": "Overrides the `indeterminate` icon",
+          "type": [
+            "String"
+          ],
+          "default": "remove",
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "input",
+          "title": "input",
+          "description": "Emitted when the component needs to change the value",
+          "type": "(event: Event) => void"
+        }
+      ]
+    },
+    {
+      "name": "VaChip",
+      "title": "Chip",
+      "importIdentifier": "VaChip",
+      "props": [
+        {
+          "name": "closeable",
+          "title": "closeable",
+          "description": "Provides the ability to close the tag",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "outline",
+          "title": "outline",
+          "description": "Applies outline styling",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "flat",
+          "title": "flat",
+          "description": "Applies flat styling",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "The icon to be displayed inside a tag",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "shadow",
+          "title": "shadow",
+          "description": "Applies box-shadow to the component",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaCollapse",
+      "title": "Collapse",
+      "importIdentifier": "VaCollapse",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Content of the collapse component"
+        },
+        {
+          "name": "header",
+          "title": "header",
+          "description": "Replaces content of the header to custom"
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Current collapse state"
+        },
+        {
+          "name": "header",
+          "title": "header",
+          "description": "Text content to place in the header"
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "The icon to be displayed inside a header"
+        },
+        {
+          "name": "solid",
+          "title": "solid",
+          "description": "Adds borders to the collapse"
+        },
+        {
+          "name": "colorAll",
+          "title": "color all",
+          "description": "Applies color to collapse contents background"
+        }
+      ],
+      "events": [
+        {
+          "name": "input",
+          "title": "input",
+          "description": "Emits when collapse is clicked",
+          "type": "(value: boolean) => void"
+        }
+      ]
+    },
+    {
+      "name": "VaColorIndicator",
+      "title": "ColorIndicator",
+      "importIdentifier": "VaColorIndicator"
+    },
+    {
+      "name": "VaColorInput",
+      "title": "ColorInput",
+      "importIdentifier": "VaColorInput",
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Current color."
+        },
+        {
+          "name": "selected",
+          "title": "selected",
+          "description": "Select the indicator."
+        }
+      ]
+    },
+    {
+      "name": "VaColorPalette",
+      "title": "ColorPalette",
+      "importIdentifier": "VaColorPalette",
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Current color"
+        },
+        {
+          "name": "palette",
+          "title": "palette",
+          "description": "An array of colors",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaColorPalette",
+      "title": "ColorPalette",
+      "importIdentifier": "VaColorPalette",
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Current color"
+        },
+        {
+          "name": "palette",
+          "title": "palette",
+          "description": "An array of colors",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaForm",
+      "title": "Form",
+      "importIdentifier": "VaForm",
+      "props": [
+        {
+          "name": "autofocus",
+          "title": "autofocus",
+          "description": "Focus on first form-component <!-- TODO Add link --> on render",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "test",
+          "title": "test"
+        },
+        {
+          "name": "reset",
+          "title": "reset",
+          "description": "Reset values and validation state for all form-components",
+          "type": "`() => boolean`"
+        },
+        {
+          "name": "resetValidation",
+          "title": "reset validation",
+          "description": "Reset validation for all validateable <!-- TODO Add link --> form-components.",
+          "type": "`() => boolean`"
+        },
+        {
+          "name": "focus",
+          "title": "focus",
+          "description": "Focus on first focusable form-component in the form.",
+          "type": "`() => void`"
+        },
+        {
+          "name": "focusInvalid",
+          "title": "focus invalid",
+          "description": "Focus on first focusable invalid form-component in the form. This is useful for longer forms and allows to bring user attention to invalid field.",
+          "type": "`() => void`"
+        },
+        {
+          "name": "validate",
+          "title": "validate",
+          "description": "Performs validation and updates error state for each form component. Works with nested forms.",
+          "type": "`() => boolean`"
+        }
+      ],
+      "events": [
+        {
+          "name": "validation",
+          "title": "validation",
+          "description": "Triggered on validation update",
+          "type": "`(valid: boolean) => void`"
+        }
+      ]
+    },
+    {
+      "name": "VaHover",
+      "title": "Hover",
+      "importIdentifier": "VaHover",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Vue default slot."
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Hover state."
+        }
+      ],
+      "events": [
+        {
+          "name": "input",
+          "title": "input",
+          "description": "Emits hover state when it changes.",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "name": "VaIcon",
+      "title": "Icon",
+      "importIdentifier": "VaIcon",
+      "props": [
+        {
+          "name": "component",
+          "title": "component",
+          "description": "Allows to use the `svg` component as an icon",
+          "type": [
+            "Object"
+          ],
+          "required": false
+        },
+        {
+          "name": "rotation",
+          "title": "rotation",
+          "description": "Rotates a component by a degree value",
+          "type": [
+            "String",
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "spin",
+          "title": "spin",
+          "description": "Starts rotation animation",
+          "type": [
+            "String",
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "flip",
+          "title": "flip",
+          "description": "Specifies mirror image relative to horizontal and vertical planes. `\"off\"`, `\"horizontal\"`, `\"vertical\"` and `\"both\"` values are available",
+          "type": [
+            "String"
+          ],
+          "default": "off",
+          "required": false
+        },
+        {
+          "name": "iconsConfig",
+          "title": "icons config",
+          "description": "Allows you to configurate iconset."
+        }
+      ]
+    },
+    {
+      "name": "VaImage",
+      "title": "Image",
+      "importIdentifier": "VaImage",
+      "slots": [
+        {
+          "name": "loading",
+          "title": "loading",
+          "description": "Shown when image is loading."
+        },
+        {
+          "name": "error",
+          "title": "error",
+          "description": "Is shown if loading gives an error."
+        },
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Image overlay for you to add content. Doesn't show on loading or error."
+        }
+      ],
+      "props": [
+        {
+          "name": "ratio",
+          "title": "ratio",
+          "description": "Width to height ratio.",
+          "type": [
+            "Number"
+          ],
+          "default": 1,
+          "required": false
+        },
+        {
+          "name": "contain",
+          "title": "contain",
+          "description": "Scales the image while maintaining the proportions so that the whole image fits inside the block.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "loaded",
+          "title": "loaded",
+          "description": "Emitted when image loading is finished.",
+          "type": "Boolean"
+        },
+        {
+          "name": "error",
+          "title": "error",
+          "description": "Emitted on loading error.",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "name": "VaInfiniteScroll",
+      "title": "InfiniteScroll",
+      "importIdentifier": "VaInfiniteScroll",
+      "slots": [
+        {
+          "name": "loading",
+          "title": "loading",
+          "description": "Shown when content is fetching."
+        },
+        {
+          "name": "default",
+          "title": "default",
+          "description": "The content to be scrolled"
+        }
+      ],
+      "props": [
+        {
+          "name": "offset",
+          "title": "offset",
+          "description": "Number of pixels to the end of `va-infinite-scroll` container at which the component should start loading more content in advance.",
+          "type": [
+            "Number"
+          ],
+          "default": 500,
+          "required": false
+        },
+        {
+          "name": "reverse",
+          "title": "reverse",
+          "description": "Instead of bottom, top of the container would trigger loading.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "title": "disabled",
+          "description": "Won't trigger load even when scroll reached end. Useful to prevent further loading when there is no more items in list.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "scrollTarget",
+          "title": "scroll target",
+          "description": "The element to be used as a scroll container instead of default one. Could be CSS selector or Element. When not set - direct wrapper will be used as a scroll container.",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "debounce",
+          "title": "debounce",
+          "description": "Debounce to be applied when listening to scroll event. Useful to prevent user from triggering loading multiple times.",
+          "type": [
+            "Number"
+          ],
+          "default": 100,
+          "required": false
+        },
+        {
+          "name": "load",
+          "title": "load",
+          "description": "Function that loads data. Should return Promise",
+          "type": [
+            "Function"
+          ],
+          "required": true
+        },
+        {
+          "name": "tag",
+          "title": "tag",
+          "description": "Replaces html tag. This is useful for semantics and also to allow for valid markup in some cases (`ul > li` and `tr > td` etc.).",
+          "type": [
+            "String"
+          ],
+          "default": "div",
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "onload",
+          "title": "onload",
+          "description": "Emits when `load` function finished with success"
+        },
+        {
+          "name": "onerror",
+          "title": "onerror",
+          "description": "Emits when `load` function thrown error"
+        }
+      ]
+    },
+    {
+      "name": "VaInnerLoading",
+      "title": "InnerLoading",
+      "importIdentifier": "VaInnerLoading",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Slot for the component to which you want to apply loading styles"
+        }
+      ]
+    },
+    {
+      "name": "VaInput",
+      "title": "Input",
+      "importIdentifier": "VaInput",
+      "slots": [
+        {
+          "name": "prepend",
+          "title": "prepend",
+          "description": "Adds an item outside the input and before input content"
+        },
+        {
+          "name": "prependInner",
+          "title": "prepend inner",
+          "description": "Adds an item inside the input and before input content"
+        },
+        {
+          "name": "append",
+          "title": "append",
+          "description": "Adds an item outside the input and after input content"
+        },
+        {
+          "name": "appendInner",
+          "title": "append inner",
+          "description": "Adds an item inside the input and after input content"
+        },
+        {
+          "name": "messages",
+          "title": "messages",
+          "description": "Replaces messages under input field with slot content"
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The input value"
+        },
+        {
+          "name": "type",
+          "title": "type",
+          "description": "Sets input type",
+          "type": [
+            "String"
+          ],
+          "default": "text",
+          "required": false
+        },
+        {
+          "name": "label",
+          "title": "label",
+          "description": "Sets input label",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "placeholder",
+          "title": "placeholder",
+          "description": "Sets input placeholder",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "mask",
+          "title": "mask",
+          "description": "Sets input mask if using as string or options for mask",
+          "type": [
+            "String",
+            "Object"
+          ],
+          "required": false
+        },
+        {
+          "name": "color",
+          "title": "color",
+          "description": "Sets input color",
+          "type": [
+            "String"
+          ],
+          "default": "primary",
+          "required": false
+        },
+        {
+          "name": "removable",
+          "title": "removable",
+          "description": "Adds an button that clears the value"
+        },
+        {
+          "name": "tabindex",
+          "title": "tabindex",
+          "description": "Sets input tabindex",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "returnRaw",
+          "title": "return raw",
+          "description": "Sets possibility to return raw value",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "autosize",
+          "title": "autosize",
+          "description": "Sets textarea possibility to grow up automatically and disables the ability to this to the user (set css `resize: none`)",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "minRows",
+          "title": "min rows",
+          "description": "Minimal count of lines",
+          "type": [
+            "Number"
+          ],
+          "default": 1,
+          "required": false
+        },
+        {
+          "name": "maxRows",
+          "title": "max rows",
+          "description": "Maximum count of lines",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "rules",
+          "title": "rules",
+          "description": "Accepts an array of functions that take an input value as an argument and return either true / false or a string with an error message",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "title": "disabled",
+          "description": "Disable the input",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "readonly",
+          "title": "readonly",
+          "description": "Puts input in readonly state",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "success",
+          "title": "success",
+          "description": "Sets input state to success",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "messages",
+          "title": "messages",
+          "description": "Displays a list of messages or message if using a string",
+          "type": [
+            "Array",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "error",
+          "title": "error",
+          "description": "Sets input state to error",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "errorMessages",
+          "title": "error messages",
+          "description": "Displays a list of error messages or message if using a string",
+          "type": [
+            "Array",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "errorCount",
+          "title": "error count",
+          "description": "Number of error messages displayed",
+          "type": [
+            "String",
+            "Number"
+          ],
+          "default": 1,
+          "required": false
+        },
+        {
+          "name": "clearable",
+          "title": "clearable",
+          "description": "Adds a button to reset the input field value",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "clearValue",
+          "title": "clear value",
+          "description": "Sets value that should be set after clearing",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "bordered",
+          "title": "bordered",
+          "description": "Applies underscore",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "focused",
+          "title": "focused",
+          "description": "Applies focus style"
+        },
+        {
+          "name": "canBeFocused",
+          "title": "can be focused",
+          "description": "If false, then input can not be focused using mouse or keyboard"
+        },
+        {
+          "name": "requiredMark",
+          "title": "required mark",
+          "description": "Adds required mark to the label",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "immediateValidation",
+          "title": "immediate validation",
+          "description": "Sets the validation to be performed when the component is mounted",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "inputClass",
+          "title": "input class",
+          "description": "Classes for `input` (not its wrapper)",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "pattern",
+          "title": "pattern",
+          "description": "The pattern prop specifies a regular expression the input value should match",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "inputmode",
+          "title": "inputmode",
+          "description": "The inputmode prop is an enumerated prop that hints at the type of data that might be entered by the user while editing the element or its contents. This alows a browser to display an apropriate virtual keyboard",
+          "type": [
+            "String"
+          ],
+          "default": "text",
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "focus",
+          "title": "focus",
+          "description": "Setting focus on input",
+          "type": "() => void"
+        },
+        {
+          "name": "blur",
+          "title": "blur",
+          "description": "Setting blurred on input",
+          "type": "() => void"
+        }
+      ],
+      "events": [
+        {
+          "name": "change",
+          "title": "change",
+          "description": "Emitted when the input loose focus or on `enter`",
+          "type": "any"
+        },
+        {
+          "name": "blur",
+          "title": "blur",
+          "description": "Emitted when the input is blurred",
+          "type": "FocusEvent"
+        },
+        {
+          "name": "focus",
+          "title": "focus",
+          "description": "Emitted when input is focused",
+          "type": "FocusEvent"
+        },
+        {
+          "name": "click",
+          "title": "click",
+          "description": "Emitted when user clicked on input",
+          "type": "Event"
+        },
+        {
+          "name": "keyup",
+          "title": "keyup",
+          "description": "Emitted when the user releases a key on the keyboard",
+          "type": "Event"
+        },
+        {
+          "name": "keydown",
+          "title": "keydown",
+          "description": "Emitted when any key is pressed",
+          "type": "Event"
+        },
+        {
+          "name": "keypress",
+          "title": "keypress",
+          "description": "Emitted when any key is pressed. The event is deprecated, will be removed in future versions"
+        },
+        {
+          "name": "clear",
+          "title": "clear",
+          "description": "Emitted when `clear` key is pressed"
+        },
+        {
+          "name": "clickIcon",
+          "title": "clickIcon",
+          "description": "Emitted when user clicked on icon",
+          "type": "Event"
+        },
+        {
+          "name": "updateError",
+          "title": "updateError",
+          "description": "Emitted when was changed error status after validation",
+          "type": "() => boolean"
+        },
+        {
+          "name": "updateErrorMessages",
+          "title": "updateErrorMessages",
+          "description": "Emitted when was changed error messages after validation",
+          "type": "() => string[] | string"
+        }
+      ]
+    },
+    {
+      "name": "VaList",
+      "title": "List",
+      "importIdentifier": "VaList",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Contains list items"
+        }
+      ],
+      "props": [
+        {
+          "name": "fit",
+          "title": "fit",
+          "description": "Stretches list by its content width",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaModal",
+      "title": "Modal",
+      "importIdentifier": "VaModal",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Content of modal body"
+        },
+        {
+          "name": "anchor",
+          "title": "anchor",
+          "description": "Modal anchor content. There is access to the `show`, `hide` and `toggle` methods in the slots scope"
+        },
+        {
+          "name": "header",
+          "title": "header",
+          "description": "Modal header content"
+        },
+        {
+          "name": "footer",
+          "title": "footer",
+          "description": "Modal footer content"
+        }
+      ],
+      "props": [
+        {
+          "name": "title",
+          "title": "title",
+          "description": "Text content to place in the title",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "message",
+          "title": "message",
+          "description": "Content of modal body",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "attachElement",
+          "title": "attach element",
+          "description": "A valid selector of element, where modal will be rendered",
+          "type": [
+            "String"
+          ],
+          "default": "body",
+          "required": false
+        },
+        {
+          "name": "disableAttachment",
+          "title": "disable attachment",
+          "description": "Ignore `attach-element` prop and render component as it's parent child",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "size",
+          "title": "size",
+          "description": "Set the size of the modal's width. `\"small\"`, `\"medium\"` (default) or `\"large\"`",
+          "type": [
+            "String"
+          ],
+          "default": "medium",
+          "required": false
+        },
+        {
+          "name": "okText",
+          "title": "ok text",
+          "description": "Text string to place in the default footer **Ok** button",
+          "type": [
+            "String"
+          ],
+          "default": "OK",
+          "required": false
+        },
+        {
+          "name": "cancelText",
+          "title": "cancel text",
+          "description": "Text string to place in the default footer **Cancel** button",
+          "type": [
+            "String"
+          ],
+          "default": "Cancel",
+          "required": false
+        },
+        {
+          "name": "hideDefaultActions",
+          "title": "hide default actions",
+          "description": "Use `hide-default-actions: true` to hide **Cancel** and **Ok** buttons",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "fullscreen",
+          "title": "fullscreen",
+          "description": "Add the `fullscreen` prop to cover the whole page",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "mobileFullscreen",
+          "title": "mobile fullscreen",
+          "description": "Use `mobile-fullscreen: false` to disable fullscreen mode for mobile viewports",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "noDismiss",
+          "title": "no dismiss",
+          "description": "Disable both close on overlay click and close on **Esc**",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "noOutsideDismiss",
+          "title": "no outside dismiss",
+          "description": "Disable close on overlay click",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "noEscDismiss",
+          "title": "no esc dismiss",
+          "description": "Disable close on **Esc**",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "maxWidth",
+          "title": "max width",
+          "description": "Use `max-width` to change the maximum width of the modal.",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "maxHeight",
+          "title": "max height",
+          "description": "Use `max-height` to change the maximum height of the modal. If content is larger, scroll will appear",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "fixedLayout",
+          "title": "fixed layout",
+          "description": "Use `fixed-layout: true` to scroll only content in modal. Title and actions will be fixed",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "withoutTransitions",
+          "title": "without transitions",
+          "description": "Use `without-transitions: true` to turn off the open and close animations on the modal",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "overlay",
+          "title": "overlay",
+          "description": "Use `overlay: false` to hide the overlay",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "overlayOpacity",
+          "title": "overlay opacity",
+          "description": "Set the overlay's opacity",
+          "type": [
+            "Number",
+            "String"
+          ],
+          "default": 0.6,
+          "required": false
+        },
+        {
+          "name": "anchorClass",
+          "title": "anchor class",
+          "description": "Set class name to the `anchor` slot container",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "zIndex",
+          "title": "z index",
+          "description": "Set the modal's `z-index`",
+          "type": [
+            "Number",
+            "String"
+          ],
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "show",
+          "title": "show",
+          "description": "Show modal (change `modelValue`)",
+          "type": "() => void"
+        },
+        {
+          "name": "hide",
+          "title": "hide",
+          "description": "Hide modal (change `modelValue`)",
+          "type": "() => void"
+        },
+        {
+          "name": "toggle",
+          "title": "toggle",
+          "description": "Toggle a modal's visibility (change `modelValue`)",
+          "type": "() => void"
+        },
+        {
+          "name": "cancel",
+          "title": "cancel"
+        },
+        {
+          "name": "ok",
+          "title": "ok"
+        },
+        {
+          "name": "onOutsideClick",
+          "title": "on outside click"
+        },
+        {
+          "name": "onBeforeEnterTransition",
+          "title": "on before enter transition"
+        },
+        {
+          "name": "onAfterEnterTransition",
+          "title": "on after enter transition"
+        },
+        {
+          "name": "onBeforeLeaveTransition",
+          "title": "on before leave transition"
+        },
+        {
+          "name": "onAfterLeaveTransition",
+          "title": "on after leave transition"
+        },
+        {
+          "name": "listenKeyUp",
+          "title": "listen key up"
+        }
+      ],
+      "events": [
+        {
+          "name": "updateModelValue",
+          "title": "updateModelValue",
+          "description": "The event is triggered when the component needs to change visibility"
+        },
+        {
+          "name": "clickOutside",
+          "title": "clickOutside",
+          "description": "Emits when overlay is clicked",
+          "type": "() => void"
+        },
+        {
+          "name": "ok",
+          "title": "ok",
+          "description": "Emits when **Ok** button is clicked",
+          "type": "() => void"
+        },
+        {
+          "name": "beforeOpen",
+          "title": "beforeOpen",
+          "description": "Emits before modal's open after transition started",
+          "type": "() => HTMLElement"
+        },
+        {
+          "name": "open",
+          "title": "open",
+          "description": "Emits when modal's is open and transition is complete",
+          "type": "() => HTMLElement"
+        },
+        {
+          "name": "beforeClose",
+          "title": "beforeClose",
+          "description": "Emits before modal's start closing after transition started",
+          "type": "() => HTMLElement"
+        },
+        {
+          "name": "close",
+          "title": "close",
+          "description": "Emits when modal's is closed and transition is complete",
+          "type": "() => HTMLElement"
+        },
+        {
+          "name": "cancel",
+          "title": "cancel",
+          "description": "Emits when the user closes the modal window without side effects",
+          "type": "() => void"
+        }
+      ]
+    },
+    {
+      "name": "VaNavbar",
+      "title": "Navbar",
+      "importIdentifier": "VaNavbar",
+      "props": [
+        {
+          "name": "shape",
+          "title": "shape",
+          "description": "If this prop true, then shape will be drawn at navbar background.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaOptionList",
+      "title": "OptionList",
+      "importIdentifier": "VaOptionList",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Used to render items. Available props are:\n`option: String `&#124;` Object`,\n`isDisabled: Boolean`,\n`name: String`,\n`color: String`,\n`leftLabel: Boolean`,\n`getText: (option: String `&#124;` Object) => String`,\n`selectedValue: Array<String `&#124;` Object>`,\n`index: Number`"
+        }
+      ],
+      "props": [
+        {
+          "name": "disabledBy",
+          "title": "disabled by",
+          "description": "Specify the key in the object to be used as item `disabled` prop. Can be string (path to the key) or function of type: `(option) => option.disabled`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "default": "disabled",
+          "required": false
+        },
+        {
+          "name": "valueBy",
+          "title": "value by",
+          "description": "Specify the key in the object to be used as item `value` prop. Can be string (path to the key) or function of type: `(option) => option.value`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "trackBy",
+          "title": "track by",
+          "description": "Specify the key in the object to be used as item `key` prop. Can be string (path to the key) or function of type: `(option) => option.track`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "default": "value",
+          "required": false
+        },
+        {
+          "name": "textBy",
+          "title": "text by",
+          "description": "Specify the key in the object to be used as item `text` prop. Can be string (path to the key) or function of type: `(option) => option.text`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "default": "text",
+          "required": false
+        },
+        {
+          "name": "options",
+          "title": "options",
+          "description": "The array of items to be displayed",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "type",
+          "title": "type",
+          "description": "Specify the format of component. Supported types are `\"radio\"`, `\"checkbox\"` and `\"switch\"`",
+          "type": [
+            "String"
+          ],
+          "default": "checkbox",
+          "required": false
+        },
+        {
+          "name": "defaultValue",
+          "title": "default value",
+          "description": "This value will be pre-selected for the stateful component",
+          "type": [
+            "String",
+            "Number",
+            "Object",
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "leftLabel",
+          "title": "left label",
+          "description": "Put the labels to the left",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "input",
+          "title": "input",
+          "description": "Emitted on value change.",
+          "type": "`(value: String | Object) => void`"
+        }
+      ]
+    },
+    {
+      "name": "VaPagination",
+      "title": "Pagination",
+      "importIdentifier": "VaPagination",
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Current page (or item if `total` is issued) value"
+        },
+        {
+          "name": "visiblePages",
+          "title": "visible pages",
+          "description": "The amount of displayed pages. (When set to 0 all pages are displayed)",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "pages",
+          "title": "pages",
+          "description": "The amount of pages",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "boundaryLinks",
+          "title": "boundary links",
+          "description": "Show controls to move to first and last page",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "boundaryNumbers",
+          "title": "boundary numbers",
+          "description": "Always show first and last page (will replace `boundary-links` if both used)",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "directionLinks",
+          "title": "direction links",
+          "description": "Show buttons to move forward and backward",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "input",
+          "title": "input",
+          "description": "Use HTML Input instead of buttons to control `va-pagination` state",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hideOnSinglePage",
+          "title": "hide on single page",
+          "description": "Component won't be displayed if only 1 page is available",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "flat",
+          "title": "flat",
+          "description": "Applies `flat` style",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "total",
+          "title": "total",
+          "description": "Set the amount of data pagination should iterate through. This prop should not be used with `pages` prop.",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "pageSize",
+          "title": "page size",
+          "description": "Set the amount of data to be displayed at 1 page. Used to calculate the length of pagination. This prop should not be used with `pages` prop.",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "boundaryIconLeft",
+          "title": "boundary icon left",
+          "description": "Set the icon name for left boundary icon",
+          "type": [
+            "String"
+          ],
+          "default": "first_page",
+          "required": false
+        },
+        {
+          "name": "boundaryIconRight",
+          "title": "boundary icon right",
+          "description": "Set the icon name for right boundary icon",
+          "type": [
+            "String"
+          ],
+          "default": "last_page",
+          "required": false
+        },
+        {
+          "name": "directionIconLeft",
+          "title": "direction icon left",
+          "description": "Set the icon name for left direction icon",
+          "type": [
+            "String"
+          ],
+          "default": "chevron_left",
+          "required": false
+        },
+        {
+          "name": "directionIconRight",
+          "title": "direction icon right",
+          "description": "Set the icon name for right direction icon",
+          "type": [
+            "String"
+          ],
+          "default": "chevron_right",
+          "required": false
+        },
+        {
+          "name": "size",
+          "title": "size",
+          "description": "Specify size for component. \"small\", \"medium\", \"large\" sizes are available",
+          "type": [
+            "String"
+          ],
+          "default": "medium",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaParallax",
+      "title": "Parallax",
+      "importIdentifier": "VaParallax",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "For a content over the parallax"
+        }
+      ],
+      "props": [
+        {
+          "name": "target",
+          "title": "target",
+          "description": "The element relative to which the component is fixed",
+          "type": [
+            "Object",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "src",
+          "title": "src",
+          "description": "URL to the image",
+          "type": [
+            "String"
+          ],
+          "required": true
+        },
+        {
+          "name": "alt",
+          "title": "alt",
+          "description": "Specifies an alternate text for an image",
+          "type": [
+            "String"
+          ],
+          "default": "parallax",
+          "required": false
+        },
+        {
+          "name": "height",
+          "title": "height",
+          "description": "Sets a height of the parallax",
+          "type": [
+            "Number"
+          ],
+          "default": 400,
+          "required": false
+        },
+        {
+          "name": "reversed",
+          "title": "reversed",
+          "description": "Flips the parallax scrolling",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "speed",
+          "title": "speed",
+          "description": "Sets a speed of the parallax scrolling",
+          "type": [
+            "Number"
+          ],
+          "default": 0.5,
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaPopover",
+      "title": "Popover",
+      "importIdentifier": "VaPopover",
+      "props": [
+        {
+          "name": "title",
+          "title": "title",
+          "description": "Sets the title of the popover"
+        },
+        {
+          "name": "message",
+          "title": "message",
+          "description": "Message which showed in a popover"
+        },
+        {
+          "name": "trigger",
+          "title": "trigger",
+          "description": "Event on which popover is triggered"
+        },
+        {
+          "name": "open",
+          "title": "open",
+          "description": "Shows popover"
+        },
+        {
+          "name": "placement",
+          "title": "placement",
+          "description": "Sets a popover position"
+        },
+        {
+          "name": "autoHide",
+          "title": "auto hide",
+          "description": "Adds the ability to hide popover when clicked outside"
+        },
+        {
+          "name": "hoverOverTimeout",
+          "title": "hover over timeout",
+          "description": "Delay before opening"
+        },
+        {
+          "name": "hoverOutTimeout",
+          "title": "hover out timeout",
+          "description": "Delay before closing"
+        }
+      ]
+    },
+    {
+      "name": "VaProgressBar",
+      "title": "ProgressBar",
+      "importIdentifier": "VaProgressBar",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Display any additional info about the progress"
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The progress value"
+        },
+        {
+          "name": "indeterminate",
+          "title": "indeterminate",
+          "description": "Create a indeterminate loading bar",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "buffer",
+          "title": "buffer",
+          "description": "Create a loading bar with a buffer. Commonly used in videos",
+          "type": [
+            "Number"
+          ],
+          "default": 100,
+          "required": false
+        },
+        {
+          "name": "reverse",
+          "title": "reverse",
+          "description": "Reverse the progress bar direction",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "rounded",
+          "title": "rounded",
+          "description": "Add a border radius to the `va-progress-bar` component (default: true)",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaProgressCircle",
+      "title": "ProgressCircle",
+      "importIdentifier": "VaProgressCircle",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Display any additional info about the progress"
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The progress value"
+        },
+        {
+          "name": "indeterminate",
+          "title": "indeterminate",
+          "description": "Using the `indeterminate` prop, the `va-progress-circle` continues to  animate indefinitely.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "thickness",
+          "title": "thickness",
+          "description": "Circle border size between 0 and 1",
+          "type": [
+            "Number"
+          ],
+          "default": 0.06,
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaRadio",
+      "title": "Radio",
+      "importIdentifier": "VaRadio",
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Model of the component"
+        },
+        {
+          "name": "option",
+          "title": "option",
+          "description": "Option value that model is updated to when an option is selected",
+          "required": false
+        },
+        {
+          "name": "tabindex",
+          "title": "tabindex",
+          "description": "Sets a custom tabindex",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaRating",
+      "title": "Rating",
+      "importIdentifier": "VaRating",
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The rating value"
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "The icon displayed when icon is filled",
+          "type": [
+            "String"
+          ],
+          "default": "star",
+          "required": false
+        },
+        {
+          "name": "halfIcon",
+          "title": "half icon",
+          "description": "The icon displayed when icon is half-filled (requires **`halves`**)",
+          "type": [
+            "String"
+          ],
+          "default": "star_half",
+          "required": false
+        },
+        {
+          "name": "emptyIcon",
+          "title": "empty icon",
+          "description": "The icon displayed when icon is empty (requires **`halves`**)",
+          "type": [
+            "String"
+          ],
+          "default": "star_outline",
+          "required": false
+        },
+        {
+          "name": "readonly",
+          "title": "readonly",
+          "description": "Disables all user interaction effects (pointer, hover)",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "numbers",
+          "title": "numbers",
+          "description": "When `true`, numbers from 1 to **`max`** are rendered instead of icons",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "halves",
+          "title": "halves",
+          "description": "Allow to select half of the item",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "max",
+          "title": "max",
+          "description": "The amount of items to display",
+          "type": [
+            "Number"
+          ],
+          "default": 5,
+          "required": false
+        },
+        {
+          "name": "clearable",
+          "title": "clearable",
+          "description": "Allows the components value to be set to 0. Triggered by clicking on currently selected icon",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hover",
+          "title": "hover",
+          "description": "Adds visual feedback when hovering on items",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "texts",
+          "title": "texts",
+          "description": "The array of captions to be used with each value. The array length should be equal to **`max`** prop",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "textColor",
+          "title": "text color",
+          "description": "Color of text captions"
+        },
+        {
+          "name": "unselectedColor",
+          "title": "unselected color",
+          "description": "Specifies the color of unselected items (by default **`color`** prop is used)",
+          "type": [
+            "String"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaScrollbar",
+      "title": "Scrollbar",
+      "importIdentifier": "VaScrollbar",
+      "methods": [
+        {
+          "name": "calcOnResize",
+          "title": "calc on resize"
+        },
+        {
+          "name": "calcSize",
+          "title": "calc size"
+        },
+        {
+          "name": "calcThumb",
+          "title": "calc thumb"
+        },
+        {
+          "name": "onContentResize",
+          "title": "on content resize"
+        },
+        {
+          "name": "startDrag",
+          "title": "start drag"
+        },
+        {
+          "name": "onDrag",
+          "title": "on drag"
+        },
+        {
+          "name": "stopDrag",
+          "title": "stop drag"
+        },
+        {
+          "name": "scroll",
+          "title": "scroll"
+        },
+        {
+          "name": "setVertical",
+          "title": "set vertical"
+        }
+      ]
+    },
+    {
+      "name": "VaSelect",
+      "title": "Select",
+      "importIdentifier": "VaSelect",
+      "slots": [
+        {
+          "name": "prepend",
+          "title": "prepend",
+          "description": "Adds an item outside the input and before input content"
+        },
+        {
+          "name": "prependInner",
+          "title": "prepend inner",
+          "description": "Adds an item inside the input and before input content"
+        },
+        {
+          "name": "append",
+          "title": "append",
+          "description": "Adds an item outside the input and after input content"
+        },
+        {
+          "name": "appendInner",
+          "title": "append inner",
+          "description": "Adds an item inside the input and after input content"
+        },
+        {
+          "name": "content",
+          "title": "content",
+          "description": "Adds an item instead the input"
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Model of the component. Must be Array if using 'multiple' prop"
+        },
+        {
+          "name": "clearValue",
+          "title": "clear value",
+          "description": "Sets value that should be set after clearing",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "options",
+          "title": "options",
+          "description": "Available options that the user can select from",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "disabledBy",
+          "title": "disabled by",
+          "description": "Specify the key in the object to be used as item `disabled` prop. Can be string (path to the key) or function of type: `(option) => option.disabled`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "default": "disabled",
+          "required": false
+        },
+        {
+          "name": "valueBy",
+          "title": "value by",
+          "description": "Specify the key in the object to be used as item `value` prop. Can be string (path to the key) or function of type: `(option) => option.value`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "trackBy",
+          "title": "track by",
+          "description": "Specify the key in the object to be used as item `key` prop. Can be string (path to the key) or function of type: `(option) => option.track`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "default": "value",
+          "required": false
+        },
+        {
+          "name": "textBy",
+          "title": "text by",
+          "description": "Specify the key in the object to be used as item `text` prop. Can be string (path to the key) or function of type: `(option) => option.text`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "default": "text",
+          "required": false
+        },
+        {
+          "name": "groupBy",
+          "title": "group by",
+          "description": "Specify the key in the object to be used as item `group` prop. Can be string (path to the key) or function of type: `(option) => option.group`",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "default": "group",
+          "required": false
+        },
+        {
+          "name": "placeholder",
+          "title": "placeholder",
+          "description": "Sets the placeholder text to input",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "position",
+          "title": "position",
+          "description": "Sets option list position",
+          "type": [
+            "String"
+          ],
+          "default": "bottom",
+          "required": false
+        },
+        {
+          "name": "tagMax",
+          "title": "tag max",
+          "description": "Sets maximum tag count after whom selection will be cropped"
+        },
+        {
+          "name": "tags",
+          "title": "tags",
+          "description": "Sets selection display as tags"
+        },
+        {
+          "name": "deletableTags",
+          "title": "deletable tags",
+          "description": "Sets ability to delete tags"
+        },
+        {
+          "name": "searchable",
+          "title": "searchable",
+          "description": "Sets ability to filter option list by typing",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "multiple",
+          "title": "multiple",
+          "description": "Sets select in multiple mode",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "maxSelections",
+          "title": "max selections",
+          "description": "Sets the maximum amount of selected options",
+          "type": [
+            "Number",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "width",
+          "title": "width",
+          "description": "Sets option list width",
+          "type": [
+            "String"
+          ],
+          "default": "100%",
+          "required": false
+        },
+        {
+          "name": "maxHeight",
+          "title": "max height",
+          "description": "Sets option list maximum height",
+          "type": [
+            "String"
+          ],
+          "default": "256px",
+          "required": false
+        },
+        {
+          "name": "noOptionsText",
+          "title": "no options text",
+          "description": "Sets text whom displaying if list have no items",
+          "type": [
+            "String"
+          ],
+          "default": "Items not found",
+          "required": false
+        },
+        {
+          "name": "fixed",
+          "title": "fixed",
+          "description": "Sets dropdown position strategy",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "clearable",
+          "title": "clearable",
+          "description": "Sets ability to clear selection",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hideSelected",
+          "title": "hide selected",
+          "description": "Sets ability to hide selected options",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "allowCreate",
+          "title": "allow create",
+          "description": "Allow creating new options. Can be set to `unique` if you want to create only unique options",
+          "type": [
+            "Boolean",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "clearIcon",
+          "title": "clear icon",
+          "description": "Sets the clear icon"
+        },
+        {
+          "name": "dropdownIcon",
+          "title": "dropdown icon",
+          "description": "Sets the dropdown icon. Can be object if you want to sets different open/close icons",
+          "type": [
+            "String",
+            "Object"
+          ],
+          "required": false
+        },
+        {
+          "name": "bordered",
+          "title": "bordered",
+          "description": "Applies style with bottom border",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "requiredMark",
+          "title": "required mark",
+          "description": "Adds required mark to the label",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "separator",
+          "title": "separator",
+          "description": "Text to separate selected values",
+          "type": [
+            "String"
+          ],
+          "default": ", ",
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "focus",
+          "title": "focus"
+        },
+        {
+          "name": "blur",
+          "title": "blur"
+        }
+      ],
+      "events": [
+        {
+          "name": "clear",
+          "title": "clear",
+          "description": "Emitted if select value has been cleared",
+          "type": "any"
+        },
+        {
+          "name": "updateSearch",
+          "title": "updateSearch",
+          "description": "Emitted if search value has changed",
+          "type": "any"
+        },
+        {
+          "name": "createNew",
+          "title": "createNew",
+          "description": "Emitted if search input has created new option"
+        },
+        {
+          "name": "scrollBottom",
+          "title": "scrollBottom",
+          "description": "Emitted once the scroll position of options has reached the bottom",
+          "type": "any"
+        }
+      ]
+    },
+    {
+      "name": "VaSeparator",
+      "title": "Separator",
+      "importIdentifier": "VaSeparator"
+    },
+    {
+      "name": "VaSidebar",
+      "title": "Sidebar",
+      "importIdentifier": "VaSidebar",
+      "props": [
+        {
+          "name": "minimized",
+          "title": "minimized",
+          "description": "Minimized state of sidebar.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hoverable",
+          "title": "hoverable",
+          "description": "Expand sidebar on hover.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "position",
+          "title": "position",
+          "description": "Position of `va-sidebar`, can be `right` or `left`.",
+          "type": [
+            "String"
+          ],
+          "default": "left",
+          "required": false
+        },
+        {
+          "name": "width",
+          "title": "width",
+          "description": "Width of component in maximized state.",
+          "type": [
+            "String"
+          ],
+          "default": "16rem",
+          "required": false
+        },
+        {
+          "name": "minimizedWidth",
+          "title": "minimized width",
+          "description": "Width of component in minimized state.",
+          "type": [
+            "String"
+          ],
+          "default": "2.5rem",
+          "required": false
+        },
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The current visibility state of `va-sidebar`."
+        }
+      ]
+    },
+    {
+      "name": "VaSlider",
+      "title": "Slider",
+      "importIdentifier": "VaSlider",
+      "slots": [
+        {
+          "name": "append",
+          "title": "append",
+          "description": "Slot for input after slider."
+        },
+        {
+          "name": "prepend",
+          "title": "prepend",
+          "description": "Slot for input before slider."
+        },
+        {
+          "name": "label",
+          "title": "label",
+          "description": "Replaces the default label."
+        },
+        {
+          "name": "trackLabel",
+          "title": "track label",
+          "description": "The content of the `track-label`. Slot scope has access to `value` and `order` (for `range` type) variables."
+        }
+      ],
+      "props": [
+        {
+          "name": "range",
+          "title": "range",
+          "description": "Transforms single value slider into range slider.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Numeric value(s) of slider."
+        },
+        {
+          "name": "trackLabel",
+          "title": "track label",
+          "description": "Label of slider track.",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "color",
+          "title": "color",
+          "description": "Color of slider.",
+          "type": [
+            "String"
+          ],
+          "default": "primary",
+          "required": false
+        },
+        {
+          "name": "trackColor",
+          "title": "track color",
+          "description": "Color of slider base track.",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "labelColor",
+          "title": "label color",
+          "description": "Color of slider label.",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "trackLabelVisible",
+          "title": "track label visible",
+          "description": "Toggles track label visibility.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "min",
+          "title": "min",
+          "description": "Minimum value.",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "max",
+          "title": "max",
+          "description": "Maximum value.",
+          "type": [
+            "Number"
+          ],
+          "default": 100,
+          "required": false
+        },
+        {
+          "name": "step",
+          "title": "step",
+          "description": "Slider value step.",
+          "type": [
+            "Number"
+          ],
+          "default": 1,
+          "required": false
+        },
+        {
+          "name": "label",
+          "title": "label",
+          "description": "Slider label",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "invertLabel",
+          "title": "invert label",
+          "description": "Moves label to opposite side.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "title": "disabled",
+          "description": "Disables slider.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "readonly",
+          "title": "readonly",
+          "description": "Makes slider read only.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "pins",
+          "title": "pins",
+          "description": "Adds step marks to a slider track.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "iconPrepend",
+          "title": "icon prepend",
+          "description": "Icon at the start of slider.",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "iconAppend",
+          "title": "icon append",
+          "description": "Icon at the end of slider.",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "vertical",
+          "title": "vertical",
+          "description": "Makes slider vertical.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "showTrack",
+          "title": "show track",
+          "description": "Toggles track display.",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "dragStart",
+          "title": "dragStart",
+          "description": "Emitted on drag start.",
+          "type": ""
+        },
+        {
+          "name": "dragEnd",
+          "title": "dragEnd",
+          "description": "Emitted on drag end.",
+          "type": ""
+        },
+        {
+          "name": "change",
+          "title": "change",
+          "description": "Emitted on value input.",
+          "type": "`Number | [Number, Number]`"
+        },
+        {
+          "name": "input",
+          "title": "input",
+          "description": "Emitted on value change.",
+          "type": "`Number | [Number, Number]`"
+        }
+      ]
+    },
+    {
+      "name": "VaSpacer",
+      "title": "Spacer",
+      "importIdentifier": "VaSpacer"
+    },
+    {
+      "name": "VaSwitch",
+      "title": "Switch",
+      "importIdentifier": "VaSwitch",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "Slot for label."
+        },
+        {
+          "name": "innerLabel",
+          "title": "inner label",
+          "description": "Slot for inner label."
+        }
+      ],
+      "props": [
+        {
+          "name": "color",
+          "title": "color",
+          "description": "Color of switch",
+          "type": [
+            "String"
+          ],
+          "default": "primary",
+          "required": false
+        },
+        {
+          "name": "size",
+          "title": "size",
+          "description": "Specify size for component. `\"small\"`, `\"medium\"`, `\"large\"` sizes are available",
+          "type": [
+            "String"
+          ],
+          "default": "medium",
+          "required": false
+        },
+        {
+          "name": "label",
+          "title": "label",
+          "description": "Switch label",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "leftLabel",
+          "title": "left label",
+          "description": "Moves label to the left",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "readonly",
+          "title": "readonly",
+          "description": "Makes switch read only",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "trueLabel",
+          "title": "true label",
+          "description": "Label when checked",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "falseLabel",
+          "title": "false label",
+          "description": "Label when unchecked",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "trueInnerLabel",
+          "title": "true inner label",
+          "description": "Inner label when checked",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "falseInnerLabel",
+          "title": "false inner label",
+          "description": "Inner label when unchecked",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "value",
+          "title": "value",
+          "description": "Switch value"
+        },
+        {
+          "name": "trueValue",
+          "title": "true value",
+          "description": "Value when checked",
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "falseValue",
+          "title": "false value",
+          "description": "Value when unchecked",
+          "required": false
+        },
+        {
+          "name": "arrayValue",
+          "title": "array value",
+          "description": "Takes the value of a switch in an array of switches",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "VaTabs",
+      "title": "Tabs",
+      "importIdentifier": "VaTabs",
+      "slots": [
+        {
+          "name": "default",
+          "title": "default",
+          "description": "For a content"
+        },
+        {
+          "name": "tabs",
+          "title": "tabs",
+          "description": "For a list of tabs"
+        }
+      ],
+      "props": [
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The *name* of selected tab or *index* (if `name` prop is not specified)"
+        },
+        {
+          "name": "left",
+          "title": "left",
+          "description": "Align all items to the left",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "right",
+          "title": "right",
+          "description": "Align all items to the right",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "center",
+          "title": "center",
+          "description": "Align all items to the center",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "grow",
+          "title": "grow",
+          "description": "Take all container width",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hideSlider",
+          "title": "hide slider",
+          "description": "Remove slider which underlines selected item",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "vertical",
+          "title": "vertical",
+          "description": "Align all items vertically",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "prevIcon",
+          "title": "prev icon",
+          "description": "Icon to be used for scrolling backward in pagination",
+          "type": [
+            "String"
+          ],
+          "default": "chevron_left",
+          "required": false
+        },
+        {
+          "name": "nextIcon",
+          "title": "next icon",
+          "description": "Icon to be used for scrolling forward in pagination",
+          "type": [
+            "String"
+          ],
+          "default": "chevron_right",
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "clickNext",
+          "title": "clickNext",
+          "description": "Emits when pagination **next** is clicked"
+        },
+        {
+          "name": "clickPrev",
+          "title": "clickPrev",
+          "description": "Emits when pagination **prev** is clicked"
+        }
+      ]
+    },
+    {
+      "name": "VaTimeInput",
+      "title": "TimeInput",
+      "importIdentifier": "VaTimeInput",
+      "props": [
+        {
+          "name": "ampm",
+          "title": "ampm",
+          "description": "Use 12-hours time format.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hoursFilter",
+          "title": "hours filter",
+          "description": "Function that allows you to hide some specific hours",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "minutesFilter",
+          "title": "minutes filter",
+          "description": "Function that allows you to hide some specific minutes",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "secondsFilter",
+          "title": "seconds filter",
+          "description": "Function that allows you to hide some specific seconds",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "view",
+          "title": "view",
+          "description": "View specifying which columns will be shown",
+          "type": [
+            "String"
+          ],
+          "default": "minutes",
+          "required": false
+        },
+        {
+          "name": "periodUpdatesModelValue",
+          "title": "period updates model value",
+          "description": "If user will change period it will automatically update model value. You can turn off it and am/pm switch will only change view.",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "format",
+          "title": "format",
+          "description": "Custom function that format model value as input text",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "parse",
+          "title": "parse",
+          "description": "Custom function that parses text from VaInput",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "manualInput",
+          "title": "manual input",
+          "description": "Allows user to manually input date in VaInput",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "isOpen",
+          "title": "is open",
+          "description": "Value for dropdown. If `true`, then dropdown is shown",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "value",
+          "title": "value",
+          "description": "The input value"
+        },
+        {
+          "name": "type",
+          "title": "type",
+          "description": "Sets input type",
+          "type": [
+            "String"
+          ],
+          "default": "text",
+          "required": false
+        },
+        {
+          "name": "label",
+          "title": "label",
+          "description": "Sets input label",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "placeholder",
+          "title": "placeholder",
+          "description": "Sets input placeholder",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "mask",
+          "title": "mask",
+          "description": "Sets input mask if using as string or options for mask",
+          "type": [
+            "String",
+            "Object"
+          ],
+          "required": false
+        },
+        {
+          "name": "color",
+          "title": "color",
+          "description": "Sets input color",
+          "type": [
+            "String"
+          ],
+          "default": "primary",
+          "required": false
+        },
+        {
+          "name": "removable",
+          "title": "removable",
+          "description": "Adds an button that clears the value"
+        },
+        {
+          "name": "tabindex",
+          "title": "tabindex",
+          "description": "Sets input tabindex",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "returnRaw",
+          "title": "return raw",
+          "description": "Sets possibility to return raw value",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "clearValue",
+          "title": "clear value",
+          "description": "Sets value that should be set after clearing",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "autosize",
+          "title": "autosize",
+          "description": "Sets textarea possibility to grow up automatically",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "minRows",
+          "title": "min rows",
+          "description": "Minimal count of lines",
+          "type": [
+            "Number"
+          ],
+          "default": 1,
+          "required": false
+        },
+        {
+          "name": "maxRows",
+          "title": "max rows",
+          "description": "Maximum count of lines",
+          "type": [
+            "Number"
+          ],
+          "required": false
+        },
+        {
+          "name": "rules",
+          "title": "rules",
+          "description": "Accepts an array of functions that take an input value as an argument and return either true / false or a string with an error message",
+          "type": [
+            "Array"
+          ],
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "title": "disabled",
+          "description": "Disable the input",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "readonly",
+          "title": "readonly",
+          "description": "Puts input in readonly state",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "success",
+          "title": "success",
+          "description": "Sets input state to success",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "messages",
+          "title": "messages",
+          "description": "Displays a list of messages or message if using a string",
+          "type": [
+            "Array",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "error",
+          "title": "error",
+          "description": "Sets input state to error",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "errorMessages",
+          "title": "error messages",
+          "description": "Displays a list of error messages or message if using a string",
+          "type": [
+            "Array",
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "errorCount",
+          "title": "error count",
+          "description": "Number of error messages displayed",
+          "type": [
+            "String",
+            "Number"
+          ],
+          "default": 1,
+          "required": false
+        },
+        {
+          "name": "clearable",
+          "title": "clearable",
+          "description": "Adds a button to reset the input field value",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "bordered",
+          "title": "bordered",
+          "description": "Applies underscore",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "focused",
+          "title": "focused",
+          "description": "Applies focus style"
+        },
+        {
+          "name": "canBeFocused",
+          "title": "can be focused",
+          "description": "If false, then input can not be focused using mouse or keyboard"
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "Sets an icon. The default icon position is on the right",
+          "type": [
+            "String"
+          ],
+          "default": "schedule",
+          "required": false
+        },
+        {
+          "name": "requiredMark",
+          "title": "required mark",
+          "description": "Adds required mark to the label",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "leftIcon",
+          "title": "left icon",
+          "description": "Sets the icon position to the left",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "focus",
+          "title": "focus"
+        },
+        {
+          "name": "blur",
+          "title": "blur"
+        }
+      ]
+    },
+    {
+      "name": "VaTimePicker",
+      "title": "TimePicker",
+      "importIdentifier": "VaTimePicker",
+      "props": [
+        {
+          "name": "ampm",
+          "title": "ampm",
+          "description": "Use 12-hours time format.",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "hoursFilter",
+          "title": "hours filter",
+          "description": "Function that allows you to hide some specific hours",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "minutesFilter",
+          "title": "minutes filter",
+          "description": "Function that allows you to hide some specific minutes",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "secondsFilter",
+          "title": "seconds filter",
+          "description": "Function that allows you to hide some specific seconds",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "view",
+          "title": "view",
+          "description": "View specifying which columns will be shown",
+          "type": [
+            "String"
+          ],
+          "default": "minutes",
+          "required": false
+        },
+        {
+          "name": "periodUpdatesModelValue",
+          "title": "period updates model value",
+          "description": "If user will change period it will automatically update model value. You can turn off it and am/pm switch will only change view.",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "focus",
+          "title": "focus"
+        },
+        {
+          "name": "blur",
+          "title": "blur"
+        }
+      ]
+    },
+    {
+      "name": "va-timeline",
+      "title": "-timeline",
+      "importIdentifier": "import { va-timeline } from 'vuestic-ui'"
+    },
+    {
+      "name": "VaToast",
+      "title": "Toast",
+      "importIdentifier": "VaToast",
+      "props": [
+        {
+          "name": "title",
+          "title": "title",
+          "description": "Sets the title for the notification",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "offsetY",
+          "title": "offset y",
+          "description": "Sets the Y offset",
+          "type": [
+            "Number"
+          ],
+          "default": 16,
+          "required": false
+        },
+        {
+          "name": "offsetX",
+          "title": "offset x",
+          "description": "Sets the X offset",
+          "type": [
+            "Number"
+          ],
+          "default": 16,
+          "required": false
+        },
+        {
+          "name": "message",
+          "title": "message",
+          "description": "Notification message",
+          "type": [
+            "String",
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "icon",
+          "title": "icon",
+          "description": "Sets the close icon",
+          "type": [
+            "String"
+          ],
+          "default": "close",
+          "required": false
+        },
+        {
+          "name": "customClass",
+          "title": "custom class",
+          "description": "Applies custom class to the component",
+          "type": [
+            "String"
+          ],
+          "required": false
+        },
+        {
+          "name": "duration",
+          "title": "duration",
+          "description": "Sets the duration of the notification display",
+          "type": [
+            "Number"
+          ],
+          "default": 5000,
+          "required": false
+        },
+        {
+          "name": "closeable",
+          "title": "closeable",
+          "description": "Provides the ability to close the component",
+          "type": [
+            "Boolean"
+          ],
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "onClose",
+          "title": "on close",
+          "description": "Applies a function to use when pressed a close button",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "onClick",
+          "title": "on click",
+          "description": "Applies a function to use when clicked",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "position",
+          "title": "position",
+          "description": "Sets the position of the notification",
+          "type": [
+            "String"
+          ],
+          "default": "top-right",
+          "required": false
+        },
+        {
+          "name": "render",
+          "title": "render",
+          "description": "Render function to use a custom content",
+          "type": [
+            "Function"
+          ],
+          "required": false
+        },
+        {
+          "name": "multiLine",
+          "title": "multi line",
+          "description": "Sets more space for the Toast component",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        },
+        {
+          "name": "html",
+          "title": "html",
+          "description": "Sets the ability to use `message` as innerHtml. **Please note that this can lead to XSS attacks**, so make sure that you sanitize the `message` by yourself",
+          "type": [
+            "Boolean"
+          ],
+          "required": false
+        }
+      ],
+      "events": [
+        {
+          "name": "onClick",
+          "title": "onClick",
+          "description": "Emits when toast is clicked"
+        },
+        {
+          "name": "onClose",
+          "title": "onClose",
+          "description": "Emits when close button is clicked"
+        }
+      ]
+    },
+    {
+      "name": "VaTreeView",
+      "title": "TreeView",
+      "importIdentifier": "VaTreeView"
+    }
+  ]
+}

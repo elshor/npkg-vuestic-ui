@@ -1,0 +1,6090 @@
+{
+  "types": [
+    {
+      "name": "link(class)",
+      "title": "link (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "link",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "link-secondary(class)",
+      "title": "link-secondary (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "link-secondary",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "title--va-info(class)",
+      "title": "title--va-info (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "title--va-info",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "title--va-danger(class)",
+      "title": "title--va-danger (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "title--va-danger",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "title--va-warning(class)",
+      "title": "title--va-warning (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "title--va-warning",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "title--va-gray(class)",
+      "title": "title--va-gray (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "title--va-gray",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--bold(class)",
+      "title": "text--bold (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--bold",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--highlighted(class)",
+      "title": "text--highlighted (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--highlighted",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--left(class)",
+      "title": "text--left (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--left",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--right(class)",
+      "title": "text--right (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--right",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--center(class)",
+      "title": "text--center (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--center",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--uppercase(class)",
+      "title": "text--uppercase (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--uppercase",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--lowercase(class)",
+      "title": "text--lowercase (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--lowercase",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--capitalize(class)",
+      "title": "text--capitalize (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--capitalize",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--no-wrap(class)",
+      "title": "text--no-wrap (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--no-wrap",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--truncate(class)",
+      "title": "text--truncate (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--truncate",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--code(class)",
+      "title": "text--code (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--code",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text--secondary(class)",
+      "title": "text--secondary (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text--secondary",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "va-blockquote(class)",
+      "title": "va-blockquote (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "va-blockquote",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "display-1(class)",
+      "title": "display-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "display-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "display-2(class)",
+      "title": "display-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "display-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "display-3(class)",
+      "title": "display-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "display-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "display-4(class)",
+      "title": "display-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "display-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "display-5(class)",
+      "title": "display-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "display-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "display-6(class)",
+      "title": "display-6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "display-6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "code-snippe(class)",
+      "title": "code-snippe (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "code-snippe",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "va-unordered(class)",
+      "title": "va-unordered (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "va-unordered",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "va-ordered(class)",
+      "title": "va-ordered (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "va-ordered",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "va-table(class)",
+      "title": "va-table (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "va-table",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "text-block(class)",
+      "title": "text-block (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "text-block",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "muted(class)",
+      "title": "muted (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "muted",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ma-0(class)",
+      "title": "ma-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ma-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "my-0(class)",
+      "title": "my-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "my-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mt-0(class)",
+      "title": "mt-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mt-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mb-0(class)",
+      "title": "mb-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mb-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mx-0(class)",
+      "title": "mx-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mx-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mr-0(class)",
+      "title": "mr-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mr-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ml-0(class)",
+      "title": "ml-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ml-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ma-1(class)",
+      "title": "ma-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ma-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "my-1(class)",
+      "title": "my-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "my-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mt-1(class)",
+      "title": "mt-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mt-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mb-1(class)",
+      "title": "mb-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mb-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mx-1(class)",
+      "title": "mx-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mx-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mr-1(class)",
+      "title": "mr-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mr-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ml-1(class)",
+      "title": "ml-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ml-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ma-2(class)",
+      "title": "ma-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ma-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "my-2(class)",
+      "title": "my-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "my-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mt-2(class)",
+      "title": "mt-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mt-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mb-2(class)",
+      "title": "mb-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mb-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mx-2(class)",
+      "title": "mx-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mx-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mr-2(class)",
+      "title": "mr-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mr-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ml-2(class)",
+      "title": "ml-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ml-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ma-3(class)",
+      "title": "ma-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ma-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "my-3(class)",
+      "title": "my-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "my-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mt-3(class)",
+      "title": "mt-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mt-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mb-3(class)",
+      "title": "mb-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mb-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mx-3(class)",
+      "title": "mx-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mx-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mr-3(class)",
+      "title": "mr-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mr-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ml-3(class)",
+      "title": "ml-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ml-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ma-4(class)",
+      "title": "ma-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ma-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "my-4(class)",
+      "title": "my-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "my-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mt-4(class)",
+      "title": "mt-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mt-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mb-4(class)",
+      "title": "mb-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mb-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mx-4(class)",
+      "title": "mx-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mx-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mr-4(class)",
+      "title": "mr-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mr-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ml-4(class)",
+      "title": "ml-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ml-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ma-5(class)",
+      "title": "ma-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ma-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "my-5(class)",
+      "title": "my-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "my-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mt-5(class)",
+      "title": "mt-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mt-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mb-5(class)",
+      "title": "mb-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mb-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mx-5(class)",
+      "title": "mx-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mx-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mr-5(class)",
+      "title": "mr-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mr-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ml-5(class)",
+      "title": "ml-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ml-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mt-auto(class)",
+      "title": "mt-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mt-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "my-auto(class)",
+      "title": "my-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "my-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ma-auto(class)",
+      "title": "ma-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ma-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mr-auto(class)",
+      "title": "mr-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mr-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mx-auto(class)",
+      "title": "mx-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mx-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "mb-auto(class)",
+      "title": "mb-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "mb-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ml-auto(class)",
+      "title": "ml-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ml-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pa-0(class)",
+      "title": "pa-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pa-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "py-0(class)",
+      "title": "py-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "py-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pt-0(class)",
+      "title": "pt-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pt-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pb-0(class)",
+      "title": "pb-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pb-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "px-0(class)",
+      "title": "px-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "px-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pr-0(class)",
+      "title": "pr-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pr-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pl-0(class)",
+      "title": "pl-0 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pl-0",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pa-1(class)",
+      "title": "pa-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pa-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "py-1(class)",
+      "title": "py-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "py-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pt-1(class)",
+      "title": "pt-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pt-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pb-1(class)",
+      "title": "pb-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pb-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "px-1(class)",
+      "title": "px-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "px-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pr-1(class)",
+      "title": "pr-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pr-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pl-1(class)",
+      "title": "pl-1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pl-1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pa-2(class)",
+      "title": "pa-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pa-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "py-2(class)",
+      "title": "py-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "py-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pt-2(class)",
+      "title": "pt-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pt-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pb-2(class)",
+      "title": "pb-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pb-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "px-2(class)",
+      "title": "px-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "px-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pr-2(class)",
+      "title": "pr-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pr-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pl-2(class)",
+      "title": "pl-2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pl-2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pa-3(class)",
+      "title": "pa-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pa-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "py-3(class)",
+      "title": "py-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "py-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pt-3(class)",
+      "title": "pt-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pt-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pb-3(class)",
+      "title": "pb-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pb-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "px-3(class)",
+      "title": "px-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "px-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pr-3(class)",
+      "title": "pr-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pr-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pl-3(class)",
+      "title": "pl-3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pl-3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pa-4(class)",
+      "title": "pa-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pa-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "py-4(class)",
+      "title": "py-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "py-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pt-4(class)",
+      "title": "pt-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pt-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pb-4(class)",
+      "title": "pb-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pb-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "px-4(class)",
+      "title": "px-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "px-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pr-4(class)",
+      "title": "pr-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pr-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pl-4(class)",
+      "title": "pl-4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pl-4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pa-5(class)",
+      "title": "pa-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pa-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "py-5(class)",
+      "title": "py-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "py-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pt-5(class)",
+      "title": "pt-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pt-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pb-5(class)",
+      "title": "pb-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pb-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "px-5(class)",
+      "title": "px-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "px-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pr-5(class)",
+      "title": "pr-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pr-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pl-5(class)",
+      "title": "pl-5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pl-5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pt-auto(class)",
+      "title": "pt-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pt-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "py-auto(class)",
+      "title": "py-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "py-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pa-auto(class)",
+      "title": "pa-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pa-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pr-auto(class)",
+      "title": "pr-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pr-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "px-auto(class)",
+      "title": "px-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "px-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pb-auto(class)",
+      "title": "pb-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pb-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "pl-auto(class)",
+      "title": "pl-auto (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "pl-auto",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "layout(class)",
+      "title": "layout (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "layout",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "fluid(class)",
+      "title": "fluid (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "fluid",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "fill-height(class)",
+      "title": "fill-height (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "fill-height",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "row(class)",
+      "title": "row (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "row",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "gutter--xs(class)",
+      "title": "gutter--xs (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "gutter--xs",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "flex(class)",
+      "title": "flex (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "flex",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "gutter--sm(class)",
+      "title": "gutter--sm (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "gutter--sm",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "gutter--md(class)",
+      "title": "gutter--md (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "gutter--md",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "gutter--lg(class)",
+      "title": "gutter--lg (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "gutter--lg",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "gutter--xl(class)",
+      "title": "gutter--xl (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "gutter--xl",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "reverse(class)",
+      "title": "reverse (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "reverse",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "column(class)",
+      "title": "column (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "column",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "no-wrap(class)",
+      "title": "no-wrap (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "no-wrap",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "flex-center(class)",
+      "title": "flex-center (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "flex-center",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs1(class)",
+      "title": "xs1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs1(class)",
+      "title": "order--xs1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs1(class)",
+      "title": "offset--xs1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs2(class)",
+      "title": "xs2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs2(class)",
+      "title": "order--xs2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs2(class)",
+      "title": "offset--xs2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs3(class)",
+      "title": "xs3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs3(class)",
+      "title": "order--xs3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs3(class)",
+      "title": "offset--xs3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs4(class)",
+      "title": "xs4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs4(class)",
+      "title": "order--xs4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs4(class)",
+      "title": "offset--xs4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs5(class)",
+      "title": "xs5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs5(class)",
+      "title": "order--xs5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs5(class)",
+      "title": "offset--xs5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs6(class)",
+      "title": "xs6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs6(class)",
+      "title": "order--xs6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs6(class)",
+      "title": "offset--xs6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs7(class)",
+      "title": "xs7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs7(class)",
+      "title": "order--xs7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs7(class)",
+      "title": "offset--xs7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs8(class)",
+      "title": "xs8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs8(class)",
+      "title": "order--xs8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs8(class)",
+      "title": "offset--xs8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs9(class)",
+      "title": "xs9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs9(class)",
+      "title": "order--xs9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs9(class)",
+      "title": "offset--xs9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs10(class)",
+      "title": "xs10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs10(class)",
+      "title": "order--xs10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs10(class)",
+      "title": "offset--xs10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs11(class)",
+      "title": "xs11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs11(class)",
+      "title": "order--xs11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs11(class)",
+      "title": "offset--xs11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xs12(class)",
+      "title": "xs12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xs12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xs12(class)",
+      "title": "order--xs12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xs12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xs12(class)",
+      "title": "offset--xs12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xs12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm1(class)",
+      "title": "sm1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm1(class)",
+      "title": "order--sm1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm1(class)",
+      "title": "offset--sm1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm2(class)",
+      "title": "sm2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm2(class)",
+      "title": "order--sm2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm2(class)",
+      "title": "offset--sm2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm3(class)",
+      "title": "sm3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm3(class)",
+      "title": "order--sm3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm3(class)",
+      "title": "offset--sm3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm4(class)",
+      "title": "sm4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm4(class)",
+      "title": "order--sm4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm4(class)",
+      "title": "offset--sm4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm5(class)",
+      "title": "sm5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm5(class)",
+      "title": "order--sm5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm5(class)",
+      "title": "offset--sm5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm6(class)",
+      "title": "sm6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm6(class)",
+      "title": "order--sm6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm6(class)",
+      "title": "offset--sm6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm7(class)",
+      "title": "sm7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm7(class)",
+      "title": "order--sm7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm7(class)",
+      "title": "offset--sm7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm8(class)",
+      "title": "sm8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm8(class)",
+      "title": "order--sm8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm8(class)",
+      "title": "offset--sm8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm9(class)",
+      "title": "sm9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm9(class)",
+      "title": "order--sm9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm9(class)",
+      "title": "offset--sm9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm10(class)",
+      "title": "sm10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm10(class)",
+      "title": "order--sm10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm10(class)",
+      "title": "offset--sm10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm11(class)",
+      "title": "sm11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm11(class)",
+      "title": "order--sm11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm11(class)",
+      "title": "offset--sm11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "sm12(class)",
+      "title": "sm12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "sm12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--sm12(class)",
+      "title": "order--sm12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--sm12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--sm12(class)",
+      "title": "offset--sm12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--sm12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md1(class)",
+      "title": "md1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md1(class)",
+      "title": "order--md1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md1(class)",
+      "title": "offset--md1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md2(class)",
+      "title": "md2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md2(class)",
+      "title": "order--md2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md2(class)",
+      "title": "offset--md2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md3(class)",
+      "title": "md3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md3(class)",
+      "title": "order--md3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md3(class)",
+      "title": "offset--md3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md4(class)",
+      "title": "md4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md4(class)",
+      "title": "order--md4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md4(class)",
+      "title": "offset--md4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md5(class)",
+      "title": "md5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md5(class)",
+      "title": "order--md5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md5(class)",
+      "title": "offset--md5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md6(class)",
+      "title": "md6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md6(class)",
+      "title": "order--md6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md6(class)",
+      "title": "offset--md6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md7(class)",
+      "title": "md7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md7(class)",
+      "title": "order--md7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md7(class)",
+      "title": "offset--md7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md8(class)",
+      "title": "md8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md8(class)",
+      "title": "order--md8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md8(class)",
+      "title": "offset--md8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md9(class)",
+      "title": "md9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md9(class)",
+      "title": "order--md9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md9(class)",
+      "title": "offset--md9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md10(class)",
+      "title": "md10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md10(class)",
+      "title": "order--md10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md10(class)",
+      "title": "offset--md10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md11(class)",
+      "title": "md11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md11(class)",
+      "title": "order--md11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md11(class)",
+      "title": "offset--md11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "md12(class)",
+      "title": "md12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "md12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--md12(class)",
+      "title": "order--md12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--md12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--md12(class)",
+      "title": "offset--md12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--md12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg1(class)",
+      "title": "lg1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg1(class)",
+      "title": "order--lg1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg1(class)",
+      "title": "offset--lg1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg2(class)",
+      "title": "lg2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg2(class)",
+      "title": "order--lg2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg2(class)",
+      "title": "offset--lg2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg3(class)",
+      "title": "lg3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg3(class)",
+      "title": "order--lg3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg3(class)",
+      "title": "offset--lg3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg4(class)",
+      "title": "lg4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg4(class)",
+      "title": "order--lg4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg4(class)",
+      "title": "offset--lg4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg5(class)",
+      "title": "lg5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg5(class)",
+      "title": "order--lg5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg5(class)",
+      "title": "offset--lg5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg6(class)",
+      "title": "lg6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg6(class)",
+      "title": "order--lg6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg6(class)",
+      "title": "offset--lg6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg7(class)",
+      "title": "lg7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg7(class)",
+      "title": "order--lg7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg7(class)",
+      "title": "offset--lg7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg8(class)",
+      "title": "lg8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg8(class)",
+      "title": "order--lg8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg8(class)",
+      "title": "offset--lg8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg9(class)",
+      "title": "lg9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg9(class)",
+      "title": "order--lg9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg9(class)",
+      "title": "offset--lg9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg10(class)",
+      "title": "lg10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg10(class)",
+      "title": "order--lg10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg10(class)",
+      "title": "offset--lg10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg11(class)",
+      "title": "lg11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg11(class)",
+      "title": "order--lg11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg11(class)",
+      "title": "offset--lg11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "lg12(class)",
+      "title": "lg12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "lg12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--lg12(class)",
+      "title": "order--lg12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--lg12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--lg12(class)",
+      "title": "offset--lg12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--lg12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl1(class)",
+      "title": "xl1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl1(class)",
+      "title": "order--xl1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl1(class)",
+      "title": "offset--xl1 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl1",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl2(class)",
+      "title": "xl2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl2(class)",
+      "title": "order--xl2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl2(class)",
+      "title": "offset--xl2 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl2",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl3(class)",
+      "title": "xl3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl3(class)",
+      "title": "order--xl3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl3(class)",
+      "title": "offset--xl3 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl3",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl4(class)",
+      "title": "xl4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl4(class)",
+      "title": "order--xl4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl4(class)",
+      "title": "offset--xl4 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl4",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl5(class)",
+      "title": "xl5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl5(class)",
+      "title": "order--xl5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl5(class)",
+      "title": "offset--xl5 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl5",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl6(class)",
+      "title": "xl6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl6(class)",
+      "title": "order--xl6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl6(class)",
+      "title": "offset--xl6 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl6",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl7(class)",
+      "title": "xl7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl7(class)",
+      "title": "order--xl7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl7(class)",
+      "title": "offset--xl7 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl7",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl8(class)",
+      "title": "xl8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl8(class)",
+      "title": "order--xl8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl8(class)",
+      "title": "offset--xl8 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl8",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl9(class)",
+      "title": "xl9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl9(class)",
+      "title": "order--xl9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl9(class)",
+      "title": "offset--xl9 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl9",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl10(class)",
+      "title": "xl10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl10(class)",
+      "title": "order--xl10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl10(class)",
+      "title": "offset--xl10 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl10",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl11(class)",
+      "title": "xl11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl11(class)",
+      "title": "order--xl11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl11(class)",
+      "title": "offset--xl11 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl11",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "xl12(class)",
+      "title": "xl12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "xl12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "order--xl12(class)",
+      "title": "order--xl12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "order--xl12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "offset--xl12(class)",
+      "title": "offset--xl12 (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "offset--xl12",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "flex-nowrap(class)",
+      "title": "flex-nowrap (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "flex-nowrap",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align--start(class)",
+      "title": "align--start (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align--start",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align--end(class)",
+      "title": "align--end (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align--end",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align--center(class)",
+      "title": "align--center (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align--center",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align--baseline(class)",
+      "title": "align--baseline (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align--baseline",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-self--start(class)",
+      "title": "align-self--start (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-self--start",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-self--end(class)",
+      "title": "align-self--end (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-self--end",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-self--center(class)",
+      "title": "align-self--center (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-self--center",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-self--baseline(class)",
+      "title": "align-self--baseline (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-self--baseline",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-content--start(class)",
+      "title": "align-content--start (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-content--start",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-content--end(class)",
+      "title": "align-content--end (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-content--end",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-content--center(class)",
+      "title": "align-content--center (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-content--center",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-content--space-between(class)",
+      "title": "align-content--space-between (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-content--space-between",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "align-content--space-around(class)",
+      "title": "align-content--space-around (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "align-content--space-around",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify--start(class)",
+      "title": "justify--start (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify--start",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify--end(class)",
+      "title": "justify--end (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify--end",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify--center(class)",
+      "title": "justify--center (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify--center",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify--space-around(class)",
+      "title": "justify--space-around (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify--space-around",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify--space-between(class)",
+      "title": "justify--space-between (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify--space-between",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify--space-evenly(class)",
+      "title": "justify--space-evenly (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify--space-evenly",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify-self--start(class)",
+      "title": "justify-self--start (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify-self--start",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify-self--end(class)",
+      "title": "justify-self--end (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify-self--end",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify-self--center(class)",
+      "title": "justify-self--center (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify-self--center",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "justify-self--baseline(class)",
+      "title": "justify-self--baseline (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "justify-self--baseline",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "spacer(class)",
+      "title": "spacer (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "spacer",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "grow(class)",
+      "title": "grow (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "grow",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "shrink(class)",
+      "title": "shrink (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "shrink",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "overflow--hidden(class)",
+      "title": "overflow--hidden (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "overflow--hidden",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "overflow--visible(class)",
+      "title": "overflow--visible (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "overflow--visible",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "overflow-y(class)",
+      "title": "overflow-y (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "overflow-y",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "overflow-x(class)",
+      "title": "overflow-x (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "overflow-x",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "d-block(class)",
+      "title": "d-block (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "d-block",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "d-flex(class)",
+      "title": "d-flex (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "d-flex",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "d-inline-flex(class)",
+      "title": "d-inline-flex (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "d-inline-flex",
+        "type": "class",
+        "value": true
+      }
+    },
+    {
+      "name": "ellipsis(class)",
+      "title": "ellipsis (css class)",
+      "isa": [
+        "css class"
+      ],
+      "suggest": {
+        "tag": "css classes",
+        "score": "low"
+      },
+      "$generic": "component config",
+      "$specialized": {
+        "key": "ellipsis",
+        "type": "class",
+        "value": true
+      }
+    }
+  ]
+}
